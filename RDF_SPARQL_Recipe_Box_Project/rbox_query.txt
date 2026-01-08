@@ -1,0 +1,286 @@
+Interesting SPARQL Query for Recipe Box System
+
+
+Query 1: Chef Performance Summary
+
+
+Question:
+Which chefs are performing the best based on how many recipes they created,
+their customer ratings, and the variety of cuisines they can cook?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+
+SELECT ?chefName
+       (COUNT(DISTINCT ?recipe) AS ?totalRecipes)
+       (AVG(?rating) AS ?avgRating)
+       (COUNT(DISTINCT ?cuisine) AS ?cuisineVariety)
+WHERE {
+    ?chef a ex:Chef ; 
+          ex:chefName ?chefName .
+    
+    ?recipe ex:preparedBy ?chef ; 
+            ex:hasCuisine ?cuisine .
+    
+    OPTIONAL { 
+        ?review ex:forRecipe ?recipe ; 
+                ex:rating ?rating . 
+    }
+}
+GROUP BY ?chefName
+ORDER BY DESC(?avgRating)
+
+
+
+Query 2: Fast Meal Pairing (Under 45 min)
+
+
+Question:
+What recipes can I pair together that takes less than 45 minutes in total to prepare?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?recipe1 ?recipe2
+       (xsd:integer(REPLACE(?t1, "min", "")) + 
+        xsd:integer(REPLACE(?t2, "min", "")) AS ?totalTime)
+WHERE {
+    ?recipe1 a ex:Recipe ; 
+             ex:totalTime ?t1 .
+    
+    ?recipe2 a ex:Recipe ; 
+             ex:totalTime ?t2 .
+    
+    FILTER(?recipe1 < ?recipe2)
+    FILTER(xsd:integer(REPLACE(?t1, "min", "")) + 
+           xsd:integer(REPLACE(?t2, "min", "")) < 45)
+}
+ORDER BY ?totalTime
+
+
+
+Query 3: Allergen Safety Report
+
+
+Question:
+Which recipes contain allergens, and what specific ingredients are causing the allergen warnings?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+
+SELECT ?recipe ?ingredient ?allergen
+WHERE {
+    ?recipe a ex:Recipe ;
+            ex:hasIngredient ?ingredient .
+    
+    OPTIONAL { 
+        ?ingredient ex:allergen ?allergen . 
+    }
+}
+ORDER BY ?recipe
+
+
+Query 4: Best Value Recipes (Quality vs Cost)
+
+
+Question:
+What are the best value recipes that gives high quality for low cost?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?recipe ?budget
+       ( AVG(?rating) AS ?avgRating)
+       (AVG(?rating) / xsd:float(REPLACE(?budget, "€", "") ) AS ?valueScore )
+WHERE {
+    ?recipe a ex:Recipe ; 
+            ex:budget ?budget .
+    
+    ?review ex:forRecipe ?recipe ; 
+            ex:rating ?rating .
+}
+GROUP BY ?recipe ?budget
+ORDER BY DESC(?valueScore)
+
+
+
+Query 5: Cuisine Popularity Metrics
+
+
+Question:
+Which cuisines are most popular based on number of recipes, how many orders they get,
+and the customer ratings?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+
+SELECT ?cuisine
+       (COUNT(DISTINCT ?recipe) AS ?recipes)
+       (COUNT(DISTINCT ?order) AS ?orders)
+       (AVG(?rating) AS ?avgRating)
+WHERE {
+    ?recipe a ex:Recipe ; 
+            ex:hasCuisine ?cuisine .
+    
+    OPTIONAL { 
+            ?order ex:orderContains ?recipe . 
+    }
+    
+    OPTIONAL { 
+        ?review ex:forRecipe ?recipe ; 
+                ex:rating ?rating . 
+    }
+}
+
+GROUP BY ?cuisine
+ORDER BY DESC(?orders) DESC(?avgRating)
+
+
+
+Query 6: Ingredient Pairing Network
+
+
+Question:
+
+Which ingredients appears together most frequently in our recipes?
+
+
+Query
+
+PREFIX ex: <http://example.org/food/schema#>
+
+SELECT ?ing1 ?ing2 
+       (COUNT(?recipe) AS ?pairs)
+WHERE 
+    {
+    ?recipe ex:hasIngredient ?ing1, ?ing2 .
+    
+    FILTER(?ing1 < ?ing2)
+}
+GROUP BY ?ing1 ?ing2
+HAVING (?pairs > 1)
+
+ORDER BY DESC(?pairs)
+
+
+
+Query 7: ASK - Vegetarian Chinese Recipe Check
+
+
+Question
+Do we have any recipes that is both vegetarian and chinese cuisine?
+
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+
+ASK {
+    ?recipe a ex:Vegetarian ;
+            ex:hasCuisine ex:chinese .
+}
+
+
+
+Query 8: Best Overall Recipe (Multi-Factor Ranking)
+
+
+Question:
+
+What is the best overall recipe when we consider rating, calories, protein content,
+preparation time, and the budget together?
+
+Query:
+
+
+PREFIX ex: <http://example.org/food/schema#>
+
+SELECT ?recipe 
+       (AVG(?rating) AS ?avgRating)
+       (MIN(?cal) AS ?calories)
+       (MAX(?prot) AS ?protein)
+       ?totalTime ?budget
+WHERE {
+    ?recipe a ex:Recipe ;
+            ex:hasNutrition ?nut ;
+            ex:totalTime ?totalTime ;
+            ex:budget ?budget .
+    
+    ?nut ex:calories ?cal ; 
+         ex:protein ?prot .
+    
+    ?review ex:forRecipe ?recipe ; 
+            ex:rating ?rating .
+}
+GROUP BY ?recipe ?totalTime ?budget
+ORDER BY DESC(?avgRating)
+
+
+
+
+Query 9: Late Delivery Analysis
+
+
+Question:
+Which orders were delivered late and who are the customers affected?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+
+SELECT ?order ?customer ?time
+WHERE {
+    ?order a ex:Order ;
+           ex:orderedBy ?customer ;
+           ex:deliveryTime ?time ;
+           ex:isLate true .
+}
+ORDER BY DESC(?time)
+
+
+
+Query 10: Premium Vegetarian Recipes
+
+Question:
+What are the premium vegetarian recipes with budget more than 15 euros?
+
+Query:
+
+PREFIX ex: <http://example.org/food/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?recipe ?budget
+WHERE {
+    ?recipe a ex:Vegetarian ;
+            ex:budget ?budget .
+    
+    FILTER(xsd:integer(STRBEFORE(?budget, "€")) > 15)
+}
+ORDER BY ?budget
+
+
+
+Summary
+
+This collection contains 110SPARQL queries covering various aspects:
+
+1. Chef Performance Analysis
+2. Meal Planning Optimization
+3.  Food Safety and Allergen Tracking
+4. Value and Budget Analysis
+5. Market Demand Insights
+6. Ingredient Pairing Discovery
+7.  Dietary Coverage Validation
+8.  Multi-Factor Recipe Ranking
+9. Service Quality Monitoring
+10. Premium Product Segmentation
+
+The queries demonstrate real-world applications of SPARQL for recipe management,
+chef performance analysis, customer insights, and menu optimization.

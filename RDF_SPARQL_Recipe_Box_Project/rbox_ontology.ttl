@@ -1,0 +1,338 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/food/data#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix owl:  <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+ex: a owl:Ontology;
+	rdfs:label "Recipe box Ontology"@en, "Ontologie de la boîte à recettes"@fr;
+	rdfs:commment "Schema describing recipes, menus, nutrition, orders and reviews."@en, 
+				  "Schéma décrivant les recettes, les menus, les informations nutritionnelles, les commandes et les avis."@fr.
+
+
+#CLASSES
+
+
+ex:Person a rdfs:Class ;
+    rdfs:label "human"@en, "human being"@en, "person"@en,
+               "homme"@fr, "humain"@fr, "personne"@fr, "être humain"@fr ;
+    rdfs:comment "a member of the human species"@en,
+                 "un membre de l'espèce humaine."@fr ;
+    rdfs:subClassOf foaf:Person.
+
+ex:Ingredient a rdfs:Class ;
+	rdfs:label "Ingredient"@en, "Ingrédient"@fr ;
+	rdfs:comment "Raw ingredients used in recipes."@en,
+				 "Ingrédients bruts utilisés dans les recettes."@fr.
+
+ex:Gastronomy a rdfs:Class ;
+	rdfs:label "Gastronomy Aspect"@en, "Aspect Gastronomique"@fr ;
+	rdfs:comment "Gastronomic instances: cuisine, spice level, cooking style."@en,
+				  "Exemples gastronomiques : cuisine, niveau d'épices, style de cuisson."@fr.
+
+ex:Cuisine a rdfs:Class ;
+	rdfs:label "Cuisine Type"@en, "Type de Cuisine"@fr ;
+	rdfs:comment "Origin of a recipe."@en,
+				 "Origine d'une recette."@fr ;
+	rdfs:subClassOf ex:Gastronomy.
+
+ex:SpiceLevel a rdfs:Class ;
+	rdfs:label "Level of Spice"@en, "Niveau d'épice"@fr ;
+	rdfs:comment "Indicates the intensity of spices used in recipes."@en, 
+	             "Indique l'intensité des épices utilisées dans les recettes."@fr ;
+	rdfs:subClassOf ex:Gastronomy.
+
+ex:CookingStyle a rdfs:Class ;
+	rdfs:label "Cooking Style"@en, "Style de cuisine"@fr;
+	rdfs:comment "Method of preparing the recipe."@en,
+	             "Méthode de préparation de la recette."@fr ;
+	rdfs:subClassOf ex:Gastronomy.
+
+ex:Recipe a rdfs:Class ;
+	rdfs:label "Recipe"@en, "Recette"@fr ;
+	rdfs:comment "A prepared dish including ingredients and instructions."@en,
+				 "Un plat préparé comprenant les ingrédients et les instructions."@fr.
+
+ex:Vegetarian a rdfs:Class ;
+	rdfs:label "Vegetarian Recipe"@en, "Recette végétarienne"@fr ;
+	rdfs:comment "Recipe that conatains no meat or fish."@en, 
+				"Recette sans viande ni poisson."@fr ;
+	rdfs:subClassOf ex:Recipe.
+
+ex:Menu a rdfs:Class ;
+	rdfs:label "Menu"@en, "Menu"@fr ;
+	rdfs:comment "A set of recipes offered for a day."@en, 
+				"Un ensemble de recettes proposées pour une journée"@fr.
+
+ex:Nutrition a rdfs:Class ;
+	rdfs:label "Nutrition"@en, "Nutrition"@fr ;
+	rdfs:comment "Nutritional information for a recipe in the menu."@en, 
+				"Informations nutritionnelles pour une recette du menu."@fr.
+
+ex:Customer a rdfs:Class ;
+	rdfs:label "Customer"@en, "Client"@fr ;
+	rdfs:comment "A person who places orders."@en, 
+				"Une personne qui passe des commandes."@fr ;
+	rdfs:subClassOf ex:Person.
+
+ex:Order a rdfs:Class ;
+	rdfs:label "Order"@en, "Commande"@fr ;
+	rdfs:comment "An order placed by a customer containing recipes."@en, 
+				 "Une commande passée par un client contenant des recettes."@fr.
+
+ex:Review a rdfs:Class ;
+	rdfs:label "Review"@en, "Revoir"@fr ;
+	rdfs:comment "Feedback and rating given by a customer."@en,
+	    		  "Commentaires et évaluations attribués par un client."@fr.
+
+ex:DeliveryPerson a rdfs:Class ;
+	rdfs:label "Delivery Person"@en, "Livreur"@fr ;
+	rdfs:comment "Person responsible for delivering order."@en, 
+				 "Personne chargée de la livraison de la commande."@fr ;
+	rdfs:subClassOf ex:Person.
+
+ex:DeliveryReview a rdfs:Class ;
+    rdfs:label "Delivery Review"@en, "Avis de Livraison"@fr ;
+    rdfs:comment "A specific review focusing on the delivery service."@en,
+    			  "Un compte rendu spécifique portant sur le service de livraison."@fr ;
+    rdfs:subClassOf ex:Review.
+
+ex:Chef a rdfs:Class ;
+    rdfs:label "Chef"@en, "Chef de cuisine"@fr ;
+    rdfs:comment "Person who prepares Recipe."@en,
+    			 "La personne qui prépare la recette."@fr ;
+    rdfs:subClassOf ex:Person.
+
+
+#PROPERTIES
+
+
+ex:allergen a rdf:Property ;
+	rdfs:label "has allergen"@en, "a un allergène"@fr ;
+	rdfs:comment "Indicates a substance in the ingredient that causes an allergic reaction."@en,
+				 "Indique la présence d'une substance dans l'ingrédient susceptible de provoquer une réaction allergique."@fr ;
+	rdfs:domain ex:Ingredient.
+
+ex:chefName a rdf:Property ;
+    rdfs:label "chef name"@en, "nom du chef"@fr ;
+    rdfs:comment "The name of the Chef responsible for the recipe."@en,
+                 "Le nom du Chef responsable de la recette"@fr ;
+    rdfs:domain ex:Chef ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name.
+
+ex:contactEmail a rdf:Property ;
+    rdfs:label "contact email"@en, "email de contact"@fr ;
+    rdfs:comment "The email address for contact purposes."@en,
+    			"L'adresse électronique à des fins de contact."@fr ;
+    rdfs:domain ex:Chef ;
+    rdfs:range xsd:string.
+
+ex:menuIncludes a rdf:Property ;
+    rdfs:label "menu includes"@en, "menu comprend"@fr ;
+    rdfs:comment "Recipes in the menu."@en,
+    			 "Recettes au menu."@fr ;
+    rdfs:domain ex:Menu ;
+    rdfs:range ex:Recipe.
+
+ex:hasIngredient a rdf:Property ;
+	rdfs:label "has ingredient"@en, "a ingrédient"@fr ;
+	rdfs:comment "Ingredients that are used to prepare recipes."@en,
+				 "Ingrédients utilisés pour préparer les recettes."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range ex:Ingredient.
+
+ex:ingQuantity a rdf:Property ;
+	rdfs:label "ingredient quantity"@en, "quantité d'ingrédient"@fr ;
+	rdfs:comment "Specifies quantity of an ingredient in a recipe."@en,
+				 "Indique la quantité d'un ingrédient dans une recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range xsd:string.
+
+ex:prepTime a rdf:Property ;
+	rdfs:label "Preparation Time"@en, "Temps de préparation"@fr ;
+	rdfs:comment "Preparation time for the recipe."@en,
+				 "Temps de préparation de la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range xsd:string.
+
+ex:cookTime a rdf:Property ;
+	rdfs:label "Cooking Time"@en, "Temps de cuisson"@fr ;
+	rdfs:comment "Cooking time for the recipe."@en,
+				 "Temps de cuisson indiqué pour la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range xsd:string.
+
+ex:totalTime a rdf:Property ;
+    rdfs:label "total time"@en, "temps total"@fr ;
+    rdfs:comment "sum of the preparation time and the cooking time for a recipe."@en,
+                 "somme du temps de préparation et du temps de cuisson pour une recette."@fr ;
+    rdfs:domain ex:Recipe ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ex:prepTime.
+
+ex:preparedBy a rdf:Property ;
+    rdfs:label "prepared by"@en, "préparé par"@fr ;
+    rdfs:comment "The chef responsible for developing the recipe."@en,
+    			 "Le chef chargé d'élaborer la recette."@fr ;
+    rdfs:domain ex:Recipe ;
+    rdfs:range ex:Chef.
+
+ex:budget a rdf:Property ;
+	rdfs:label "budget"@en, "budget"@fr ;
+	rdfs:comment "Estimated cost of the recipe."@en,
+				 "Coût estimé de la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range xsd:string.
+
+ex:hasCuisine a rdf:Property ;
+	rdfs:label "has cuisine type"@en, "a un type de cuisine"@fr ;
+	rdfs:comment "Cuisine type of the recipe."@en,
+				 "Type de cuisine de la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range ex:Cuisine.
+
+ex:hasSpiceLevel a rdf:Property ;
+	rdfs:label "has spice level"@en, "a un niveau d'épices"@fr ;
+	rdfs:comment "Spice level of the recipe."@en,
+				 "Niveau d'épices de la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range ex:SpiceLevel.
+
+ex:hasCookingStyle a rdf:Property ;
+	rdfs:label "has cooking style"@en, "a un style de cuisine"@fr ;
+	rdfs:comment "Cooking method of the recipe."@en,
+				 "Méthode de cuisson de la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range ex:CookingStyle.
+
+ex:hasNutrition a rdf:Property ;
+	rdfs:label "has nutrition"@en, "est nourri"@fr ;
+	rdfs:comment "Nutritional information of the recipe."@en,
+				 "Informations nutritionnelles de la recette."@fr ;
+	rdfs:domain ex:Recipe ;
+	rdfs:range ex:Nutrition.
+
+ex:forMenu a rdf:Property ;
+    rdfs:label "for menu"@en, "pour menu"@fr ;
+    rdfs:comment "Links an aggregate nutrition summary to a specific menu."@en,
+    			  "Associe un résumé nutritionnel global à un menu spécifique."@fr ;
+    rdfs:domain ex:Nutrition ;
+    rdfs:range ex:Menu.
+
+ex:orderedBy a rdf:Property ;
+    rdfs:label "ordered by"@en, "commandé par"@fr ;
+    rdfs:domain ex:Order ;
+    rdfs:range ex:Customer.
+
+ex:orderContains a rdf:Property ;
+    rdfs:label "order contains"@en, "commande contient"@fr ;
+    rdfs:domain ex:Order ;
+    rdfs:range ex:Recipe.
+
+ex:deliveredBy a rdf:Property ;
+    rdfs:label "delivered by"@en, "livré par"@fr ;
+    rdfs:domain ex:Order ;
+    rdfs:range ex:DeliveryPerson.
+
+ex:deliveryTime a rdf:Property ;
+    rdfs:label "delivery time (min)"@en, "temps de livraison (min)"@fr ;
+    rdfs:comment "The time taken for delivery in minutes."@en,
+    			  "Le délai de livraison en minutes."@fr ;
+    rdfs:domain ex:Order ;
+    rdfs:range xsd:integer.
+
+
+ex:isLate a rdf:Property ;
+    rdfs:label "is late"@en, "est en retard"@fr ;
+    rdfs:comment "Indicates if the order exceeded the expected delivery time."@en,
+    			  "Indique si la commande a dépassé le délai de livraison prévu."@fr ;
+    rdfs:domain ex:Order ;
+    rdfs:range xsd:boolean.
+
+ex:totalDeliveries a rdf:Property ;
+    rdfs:label "total deliveries"@en, "nombre total de livraisons"@fr ;
+    rdfs:comment "The total number of deliveries completed by a specific DeliveryPerson."@en,
+    			"Le nombre cumulé de livraisons effectuées par une personne de livraison spécifique."@fr ;
+    rdfs:domain ex:DeliveryPerson ;
+    rdfs:range xsd:integer.
+
+ex:reviewedBy a rdf:Property ;
+    rdfs:label "reviewed by"@en, "évalué par"@fr ;
+    rdfs:comment "Links a Review instance to the Customer who wrote the review."@en,
+    			"Lie une instance d'Avis au Client qui a rédigé l'avis."@fr ;
+    rdfs:domain ex:Review ;
+    rdfs:range ex:Customer.
+
+ex:forOrder a rdf:Property ;
+    rdfs:label "for order"@en, "pour commande"@fr ;
+    rdfs:comment "Indicates which specific Order the review is related to."@en,
+    			"Indique à quelle Commande spécifique l'avis est lié."@fr ; 
+    rdfs:domain ex:Review ;
+    rdfs:range ex:Order.
+
+ex:forRecipe a rdf:Property ;
+    rdfs:label "for recipe"@en, "pour recette"@fr ;
+    rdfs:comment "Indicates which Recipe within the order the review is specifically targeting."@en,
+    			"Indique quelle Recette au sein de la commande est spécifiquement ciblée par l'avis."@fr ;
+    rdfs:domain ex:Review ;
+    rdfs:range ex:Recipe.
+
+ex:forDeliveryPerson a rdf:Property ;
+    rdfs:label "for delivery person"@en, "pour livreur"@fr ;
+    rdfs:comment "Links a DeliveryReview specifically to the DeliveryPerson being rated."@en,
+    			"Lie un Avis de Livraison spécifiquement à la personne de livraison évaluée."@fr ;
+    rdfs:domain ex:DeliveryReview ;
+    rdfs:range ex:DeliveryPerson.
+
+ex:rating a rdf:Property ;
+    rdfs:label "recipe rating"@en, "note de la recette"@fr ;
+    rdfs:comment "The numerical score given in a general Review."@en,
+    			"Le score numérique donné dans un Avis général."@fr ;
+    rdfs:domain ex:Review ;
+    rdfs:range xsd:float.
+
+ex:deliveryRating a rdf:Property;
+    rdfs:label "delivery rating"@en, "note de la livraison"@fr ;
+    rdfs:comment "The numerical score given specifically for the delivery service."@en,
+    			"Le score numérique donné spécifiquement pour le service de livraison."@fr ;
+    rdfs:domain ex:DeliveryReview ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf ex:rating.
+
+ex:reviewText a rdf:Property ;
+    rdfs:label "review text"@en, "texte d'avis"@fr ;
+	rdfs:comment "Feedback provided by the customer."@en,
+				"Feedback qualitatif fourni par le client."@fr ;
+    rdfs:domain ex:Review ;
+    rdfs:range xsd:string.
+
+ex:calories a rdf:Property ;
+    rdfs:label "calories"@en, "calories"@fr ;
+    rdfs:comment "Energy content measured in Calories."@en,
+				"Teneur en énergie mesurée en Calories."@fr ;
+    rdfs:domain ex:Nutrition ;
+	rdfs:range xsd:integer.
+
+ex:protein a rdf:Property ;
+    rdfs:label "protein"@en, "protéine"@fr ;
+    rdfs:comment "Protein content in grams."@en,
+				"Teneur en protéines en grammes."@fr ;
+    rdfs:domain ex:Nutrition ;
+	rdfs:range xsd:integer.
+
+ex:fat a rdf:Property ;
+    rdfs:label "fat"@en, "matière grasse"@fr ;
+    rdfs:comment "Fat content in grams."@en,
+				"Teneur en matières grasses en grammes."@fr ;
+    rdfs:domain ex:Nutrition ;
+	rdfs:range xsd:integer.
+
+ex:carbs a rdf:Property ;
+    rdfs:label "carbohydrates"@en, "glucides"@fr ;
+    rdfs:comment "Carbohydrate content in grams."@en,
+				"Teneur en glucides en grammes."@fr ;
+    rdfs:domain ex:Nutrition ;
+	rdfs:range xsd:integer.

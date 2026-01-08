@@ -1,0 +1,257 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/food/schema#>.
+@prefix d: <http://example.org/food/data#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+#INGREDIENTS
+
+d:flour a ex: .
+d:cheese a ex:Ingredient ;
+        ex:allergen  d:Diary.
+d:paneer a ex:Ingredient ;
+        ex:allergen  d:Diary.
+d:tomato a ex:Ingredient.
+d:onion a ex:Ingredient.
+d:butter a ex:Ingredient ;
+        ex:allergen d:Diary.
+d:pasta a ex:Ingredient ;
+        ex:allergen d:Gluten.
+d:noodles a ex:Ingredient ;
+        ex:allergen d:Gluten.
+d:chicken a ex:Ingredient.
+d:lettuce a ex:Ingredient.
+d:vegetables a ex:Ingredient.
+
+
+#MENU
+
+d:day_menu a ex:Menu ;
+    ex:menuIncludes d:pizza,
+                    d:noodles,
+                    d:paneer_masala,
+                    d:caesar_salad,
+                    d:chicken_soup .
+
+
+#CHEFS
+
+d:chef_david a ex:Chef ;
+    ex:chefName "David Rodriguez" ;
+    ex:contactEmail "david@kitchen.com" .
+
+d:chef_maria a ex:Chef ;
+    ex:chefName "Maria John" ;
+    ex:contactEmail "maria@kitchen.com" .
+
+d:chef_priya a ex:Chef ;
+    ex:chefName "Priya Satish" ;
+    ex:contactEmail "priya@kitchen.com" .
+
+
+#GASTRONOMY INSTANCES
+
+d:indian a ex:Cuisine.
+d:chinese a ex:Cuisine.
+d:italian a ex:Cuisine.
+
+d:mild a ex:SpiceLevel.
+d:medium a ex:SpiceLevel.
+d:hot a ex:SpiceLevel.
+
+d:gravy a ex:CookingStyle.
+d:baked a ex:CookingStyle.
+d:soup a ex:CookingStyle.
+d:stirfry a ex:CookingStyle.
+
+
+#RECIPES
+
+d:pizza a ex:Recipe, ex:Vegetarian ;
+    ex:hasIngredient d:flour,d:cheese,d:tomato,d:vegetables ;
+    ex:ingQuantity "flour 200g, cheese 100g, tomato 80g, vegetables 80g" ;
+    ex:prepTime "15min" ;
+    ex:cookTime "20min" ;
+    ex:totalTime "35min" ;
+    ex:preparedBy d:chef_david ;
+    ex:budget "20€" ;
+    ex:hasCuisine d:italian ;
+    ex:hasSpiceLevel d:mild ;
+    ex:hasCookingStyle d:baked ; 
+    ex:hasNutrition d:pizza_nut.
+
+d:pizza_nut a ex:Nutrition ;
+    ex:calories "600"^^xsd:integer ;
+    ex:protein "22"^^xsd:integer ;
+    ex:fat "18"^^xsd:integer ;
+    ex:carbs "85"^^xsd:integer.
+
+d:noodles a ex:Recipe, ex:Vegetarian ;
+    ex:hasIngredient d:noodles, d:tomato, d:vegetables;
+    ex:ingQuantity "noodles 150g, vegetables 80g" ;
+    ex:prepTime "10min" ;
+    ex:cookTime "10min" ;
+    ex:totalTime "20min" ;
+    ex:preparedBy d:chef_maria ;
+    ex:budget "15€";
+    ex:hasCuisine d:chinese ;
+    ex:hasSpiceLevel d:mild ;
+    ex:hasCookingStyle d:stirfry ; 
+    ex:hasNutrition d:nut_noodles.
+
+d:nut_noodles a ex:Nutrition ;
+    ex:calories "750"^^xsd:integer ;
+    ex:protein "30"^^xsd:integer ;
+    ex:fat "20"^^xsd:integer ;
+    ex:carbs "95"^^xsd:integer.
+
+d:paneer_masala a ex:Recipe, ex:Vegetarian ;
+    ex:hasIngredient d:paneer, d:tomato, d:onion;
+    ex:ingQuantity "paneer 200g, tomato 100g, onion 100g" ;
+    ex:prepTime "15min" ;
+    ex:cookTime "20min" ;
+    ex:totalTime "35min" ;
+    ex:preparedBy d:chef_priya ;
+    ex:budget "22€";
+    ex:hasCuisine d:indian ;
+    ex:hasSpiceLevel d:medium ;
+    ex:hasCookingStyle d:gravy ; 
+    ex:allergen d:Dairy ;
+    ex:hasNutrition d:nut_pbm.
+
+d:nut_pbm a ex:Nutrition ;
+    ex:calories "520"^^xsd:integer ;
+    ex:protein "18"^^xsd:integer ;
+    ex:fat "35"^^xsd:integer ;
+    ex:carbs "20"^^xsd:integer.
+
+d:caesar_salad a ex:Recipe, ex:Vegetarian ;
+    ex:hasIngredient d:lettuce, d:cheese, d:tomato, d:onion;
+    ex:ingQuantity "lettuce 80g, tomato 10g, onion 10g, cheese 30g" ;
+    ex:prepTime "8min" ;
+    ex:totalTime "8min" ;
+    ex:preparedBy d:chef_david ;
+    ex:budget "12€";
+    ex:hasCuisine d:italian ;
+    ex:hasSpiceLevel d:mild ;
+    ex:hasCookingStyle d:stirfry ; 
+    ex:hasNutrition d:nut_caesar.
+
+d:nut_caesar a ex:Nutrition ;
+    ex:calories "350"^^xsd:integer ;
+    ex:protein "12"^^xsd:integer ;
+    ex:fat "18"^^xsd:integer ;
+    ex:carbs "28"^^xsd:integer.
+
+d:chicken_soup a ex:Recipe ;
+    ex:hasIngredient d:chicken, d:vegetables ;
+    ex:ingQuantity "chicken 150g, vegetables 100g" ;
+    ex:prepTime "5min" ;
+    ex:cookTime "20min" ;
+    ex:totalTime "25min" ;
+    ex:preparedBy d:chef_maria ;
+    ex:budget "15€";
+    ex:hasCuisine d:chinese ;
+    ex:hasSpiceLevel d:mild ;
+    ex:hasCookingStyle d:soup ; 
+    ex:hasNutrition d:nut_soup.
+
+d:nut_soup a ex:Nutrition ;
+    ex:calories "400"^^xsd:integer ;
+    ex:protein "35"^^xsd:integer ;
+    ex:fat "8"^^xsd:integer ;
+    ex:carbs "20"^^xsd:integer.
+
+
+#DAILY NUTRITION SUMMARY
+
+d:daily_nutrition a ex:Nutrition ;
+    ex:calories "2620"^^xsd:integer ;
+    ex:protein "117"^^xsd:integer ;
+    ex:fat "99"^^xsd:integer ;
+    ex:carbs "248"^^xsd:integer ;
+    ex:forMenu d:day_menu.
+
+
+#CUSTOMERS
+
+d:alex a ex:Customer, ex:Person ;
+    foaf:name "Alex Lee".
+d:sam a ex:Customer, ex:Person ; 
+    foaf:name "Sam Johnson".
+
+
+#ORDERS
+d:order1 a ex:Order ;
+    ex:orderedBy d:alex ;
+    ex:orderContains d:pizza,d:chicken_soup ;
+    ex:deliveredBy d:del_david ;
+    ex:deliveryTime "35"^^xsd:integer ;
+    ex:isLate "true"^^xsd:boolean .
+
+d:order2 a ex:Order ;
+    ex:orderedBy d:sam ;
+    ex:orderContains d:noodles,d:caesar_salad ;
+    ex:deliveredBy d:del_pierre ;
+    ex:deliveryTime "22"^^xsd:integer ;
+    ex:isLate "false"^^xsd:boolean .
+
+
+#DELIVERY PEOPLE
+
+d:del_pierre a ex:DeliveryPerson, ex:Person ; 
+    foaf:name "Pierre Smith" ;
+    ex:totalDeliveries "125"^^xsd:integer.
+d:del_david a ex:DeliveryPerson, ex:Person ; 
+    foaf:name "David Kim" ;
+    ex:totalDeliveries "90"^^xsd:integer.
+
+
+#REVIEWS
+
+d:alex_review1 a ex:Review ;
+    ex:rating "4.5"^^xsd:float ;
+    ex:reviewText "Crispy pizza and hearty soup, great combo!" ;
+    ex:reviewedBy d:alex ;
+    ex:forOrder d:order1 ;
+    ex:forRecipe d:pizza.
+
+d:alex_review2 a ex:Review ;
+    ex:rating "4.7"^^xsd:float ;
+    ex:reviewText "Soup was flavorful and healthy." ;
+    ex:reviewedBy d:alex ;
+    ex:forOrder d:order1 ;
+    ex:forRecipe d:chicken_soup.
+
+d:sam_review1 a ex:Review ;
+    ex:rating "4.0"^^xsd:float ;
+    ex:reviewText "Tasty but portion small." ;
+    ex:reviewedBy d:sam ;
+    ex:forOrder d:order2 ;
+    ex:forRecipe d:noodles.
+
+d:sam_review2 a ex:Review ;
+    ex:rating "4.2"^^xsd:float ;
+    ex:reviewText "Caesar salad was fresh and crisp." ;
+    ex:reviewedBy d:sam ;
+    ex:forOrder d:order2 ;
+    ex:forRecipe d:caesar_salad.
+
+
+# DELIVERY REVIEWS
+
+d:alex_del_review a ex:DeliveryReview, ex:Review ;
+    ex:deliveryRating "3.0"^^xsd:float ;
+    ex:reviewText "Driver was a bit slow, but polite." ;
+    ex:reviewedBy d:alex ;
+    ex:forOrder d:order1 ;
+    ex:forDeliveryPerson d:del_david .
+
+d:sam_del_review a ex:DeliveryReview, ex:Review ;
+    ex:deliveryRating "5.0"^^xsd:float ;
+    ex:reviewText "Extremely fast delivery, food was still hot." ;
+    ex:reviewedBy d:sam ;
+    ex:forOrder d:order2 ;
+    ex:forDeliveryPerson d:del_pierre .

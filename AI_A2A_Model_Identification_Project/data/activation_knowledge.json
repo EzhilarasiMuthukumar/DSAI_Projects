@@ -1,0 +1,46 @@
+{
+  "hidden_layer": [
+    {
+      "function": "ReLU",
+      "formula": "f(x) = max(0, x)",
+      "use_when": "general purpose, deep networks, default choice",
+      "reasoning": "Computationally efficient, helps avoid vanishing gradient, works well in practice"
+    },
+    {
+      "function": "Leaky ReLU",
+      "formula": "f(x) = max(0.01x, x)",
+      "use_when": "dying ReLU problem, want small negative gradients",
+      "reasoning": "Addresses dying ReLU issue, allows small negative values, helps gradient flow"
+    },
+    {
+      "function": "tanh",
+      "formula": "f(x) = (e^x - e^-x) / (e^x + e^-x)",
+      "use_when": "RNNs, normalized inputs, need zero-centered outputs",
+      "reasoning": "Zero-centered output, smooth gradient, historically popular for RNNs"
+    }
+  ],
+  "output_binary_classification": [
+    {
+      "function": "Sigmoid",
+      "formula": "f(x) = 1 / (1 + e^-x)",
+      "use_when": "binary classification output layer",
+      "reasoning": "Outputs probability between 0 and 1, perfect for binary classification"
+    }
+  ],
+  "output_multiclass_classification": [
+    {
+      "function": "Softmax",
+      "formula": "f(x_i) = e^x_i / sum(e^x_j)",
+      "use_when": "multiclass classification output layer",
+      "reasoning": "Outputs probability distribution over classes, all outputs sum to 1"
+    }
+  ],
+  "output_regression": [
+    {
+      "function": "Linear (None)",
+      "formula": "f(x) = x",
+      "use_when": "regression output layer",
+      "reasoning": "No transformation needed, allows any real value output"
+    }
+  ]
+}

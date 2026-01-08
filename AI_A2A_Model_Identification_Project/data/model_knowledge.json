@@ -1,0 +1,87 @@
+{
+  "classification": [
+    {
+      "model": "Random Forest",
+      "use_when": "tabular data, medium to large datasets, feature interactions important",
+      "reasoning": "Handles non-linear relationships well, robust to outliers, provides feature importance"
+    },
+    {
+      "model": "Logistic Regression",
+      "use_when": "linear relationships, need interpretability, smaller datasets",
+      "reasoning": "Simple, fast, interpretable coefficients, works well for linearly separable data"
+    },
+    {
+      "model": "XGBoost",
+      "use_when": "structured data, competitions, need high accuracy",
+      "reasoning": "State-of-the-art performance on tabular data, handles missing values, regularization"
+    }
+  ],
+  "regression": [
+    {
+      "model": "Linear Regression",
+      "use_when": "linear relationships, continuous target, need interpretability",
+      "reasoning": "Simple baseline, fast training, easy to interpret, works well for linear trends"
+    },
+    {
+      "model": "Random Forest Regressor",
+      "use_when": "non-linear relationships, tabular data, feature interactions",
+      "reasoning": "Captures complex patterns, handles outliers, minimal hyperparameter tuning"
+    },
+    {
+      "model": "Gradient Boosting",
+      "use_when": "structured data, need high accuracy, have computational resources",
+      "reasoning": "Excellent performance on tabular data, handles different feature scales"
+    }
+  ],
+  "clustering": [
+    {
+      "model": "K-Means",
+      "use_when": "spherical clusters expected, know number of clusters, large datasets",
+      "reasoning": "Fast and scalable, simple to understand, works well for separated groups"
+    },
+    {
+      "model": "DBSCAN",
+      "use_when": "arbitrary shaped clusters, unknown cluster count, noise in data",
+      "reasoning": "Finds clusters of varying shapes, identifies outliers, no need to specify k"
+    },
+    {
+      "model": "Hierarchical Clustering",
+      "use_when": "small to medium datasets, want dendrogram, explore different k values",
+      "reasoning": "Provides hierarchy of clusters, no need to specify k upfront, interpretable"
+    }
+  ],
+  "time_series": [
+    {
+      "model": "ARIMA",
+      "use_when": "univariate series, stationary data, seasonal patterns",
+      "reasoning": "Classical approach, handles trends and seasonality, interpretable parameters"
+    },
+    {
+      "model": "LSTM",
+      "use_when": "multivariate series, long-term dependencies, sufficient data",
+      "reasoning": "Captures complex temporal patterns, handles multiple variables, learns sequences"
+    },
+    {
+      "model": "Prophet",
+      "use_when": "daily observations, strong seasonal effects, missing data",
+      "reasoning": "Robust to missing data and outliers, intuitive parameters, handles holidays"
+    }
+  ],
+  "dimensionality_reduction": [
+    {
+      "model": "PCA",
+      "use_when": "linear relationships, need fast computation, visualization",
+      "reasoning": "Finds principal components, preserves variance, reduces noise"
+    },
+    {
+      "model": "t-SNE",
+      "use_when": "visualization, non-linear structure, smaller datasets",
+      "reasoning": "Excellent for 2D/3D visualization, captures local structure, reveals clusters"
+    },
+    {
+      "model": "UMAP",
+      "use_when": "large datasets, preserve global structure, faster than t-SNE",
+      "reasoning": "Scalable, preserves both local and global structure, supports supervised mode"
+    }
+  ]
+}
