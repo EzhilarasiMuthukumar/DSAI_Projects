@@ -1,6 +1,6 @@
 ## Story
 
-While experimenting with sentiment analysis and spam detection, wished to check if there is a possibility to optimize the task, spam detection could be a interesting usecase to exerpiment on one end and Quantum NLP appeared promising to complete the task but way more optimally, hence this experiment.
+While experimenting with sentiment analysis and spam detection, wished to check if there is a possibility to optimize the task, spam detection could be a interesting usecase to experiment on one end and Quantum inspired NLP appeared promising to complete the task but way more optimally.
 
 ## QNLP Spam Detection
 
@@ -15,7 +15,7 @@ Based on the sample spam_ham_dataset.csv downloaded from Kaggle.
 
 ### Implementation details
 
-Utilizing the simple machine learning approach of performing forward pass, loss detection, back propagation and optimization implmeneted usual ML based solution to compare against the Quantum computing for ML.
+Utilizing the simple machine learning approach of performing forward pass, loss detection, back propagation and optimization implemented usual ML based solution to compare against the Quantum inspired transformation for ML.
 
 Implemented Classic ML code using Traditional neural network using PyTorch with bag-of-words vectorization.
 Implemented Quantum NLP code using Quantum-inspired neural network with quantum layer transformations.
@@ -33,7 +33,7 @@ Executed the inference on the sample email dataset and calculated accuracy, time
 
 Used CountVectorizer with a simple feedforward neural network for Classical ML approach.
 
-Usesd Quantum NLP quantum-inspired transformations with embedding layers and quantum parameter matrices for enhanced feature representation.
+Used Quantum NLP quantum-inspired transformations with embedding layers and quantum parameter matrices for enhanced feature representation.
 
 The comparison demonstrates both approaches on spam classification, showing training time and accuracy metrics.
 
