@@ -1,7 +1,7 @@
 # Story
 
 As the core of A2A is Agents taking care of specific capabilities coming together to address the Natural Language Queries of the users in realtime scenario, after a bit of thought, decided to take current Machine Learning/Deep Learning related content itself as the problem statement to experiment for this project.
-Decided to use some of the factual data learned in Semester 1 of M1 as static data to focus on core A2A concept exploration, decided to treat Model and actication function identification for a given practical usecase itself as requirement to implement 2 Agents using A2A core conventions.
+Decided to use some of the factual data learned in Semester 1 of M1 as static data to focus on core A2A concept exploration, decided to treat Model and activation function identification for a given practical usecase itself as requirement to implement 2 Agents using A2A core conventions.
 
 # ML Recommendation System
 

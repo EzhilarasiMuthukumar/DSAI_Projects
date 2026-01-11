@@ -1,7 +1,7 @@
 # Story
 
-A Cross Over Project, as part of University Assignment, Using RDF/SPARQL represented the Ontology/knowledge graph for Recipe's, Chefs and various intricate Data Relationships to explore SPARQL as in other parallel projects in my Repository.
-While Exploring MCP, had a curious question of, would it be possible to enable access to the Recipe's in knowledge graph for an Agent in Agentic AI world, hence this exploration!
+A cross over project, as part of University assignment, using RDF/SPARQL represented the Ontology/knowledge graph for recipes, chefs and various intricate data relationships to explore SPARQL as in other parallel projects in my repository.
+While exploring MCP, had a curious question of, would it be possible to enable access to the recipes in knowledge graph for an Agent in Agentic AI world, hence this exploration!
 
 # Recipe Box MCP Server
 
@@ -38,7 +38,7 @@ To keep it simple,  stored `rbox.ttl` in the same directory as the MCP Server `r
 
 ## Running the Server
 
-The server communicates via stdio (standard input/output), which is how MCP clients connect to it, though other options were there, explored simple option.
+The server communicates via STDIO (standard input/output), which is how MCP clients connect to it, though other options were there, explored simple option.
 
 Tested it with the MCP Inspector for quick validation:
 This opens a web interface at http://localhost:6274 or a random port, where we can test the tools served by MCP server.
