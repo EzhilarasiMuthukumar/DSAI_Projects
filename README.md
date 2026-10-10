@@ -10,7 +10,7 @@ Dashboard of all projects, articles and presentations from M1 & M2 — tap a tit
 | **[Automated E2E Data Analytics](DSAI_M1_Internship/E2E_Data_Analytics/E2E_Analytics_Project_Report/E2E_Analytics_Project_Report.pdf)** <br> A CLV and revenue analytics pipeline using **Airbyte**, **Apache Airflow** and **Snowflake/Snowpark**, with **Scikit-Learn/XGBoost** models and automated **Power BI** dashboards. | **[Omnichannel Sales Forecasting Models](DSAI_M1_Internship/Machine_Learning_Sales_Prediction_Analysis/ML_Sales_Prediction_Analysis_Project_Report/ML_Sales_Prediction_Analysis_Project_Report.pdf)** <br> Compares **ARIMA**, **Prophet**, **LightGBM**, **TimesFM** and a Prophet+TimesFM ensemble for weekly sales forecasting across 8 European markets. |
 | **[MSc M1 Internship Report](DSAI_M1_Internship/DSAI_M1_Internship_Report/DSAI_M1_Internship_Report.pdf)** <br> Consolidated write-up of all four M1 workstreams — sentiment analysis, sales forecasting, data analytics and the SPIN coaching agent. | |
 
-## 🧪 Independent & Academic Projects
+## Independent & Academic Projects
 
 | | |
 |---|---|
