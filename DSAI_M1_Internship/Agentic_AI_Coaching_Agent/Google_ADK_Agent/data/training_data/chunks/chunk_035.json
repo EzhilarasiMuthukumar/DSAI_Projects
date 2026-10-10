@@ -1,0 +1,11 @@
+{
+  "id": "03_sales_scenarios.md::Scenario 3: Budget Objection Handling",
+  "source": "03_sales_scenarios.md",
+  "section": "Scenario 3: Budget Objection Handling",
+  "content": "## Scenario 3: Budget Objection Handling\n\n### Context\n- Clinic has expressed interest but says \"budget is tight this quarter\"\n- Rep needs to use SPIN to reframe the budget conversation\n\n### Conversation\n\nRep: \"I hear you on budget being tight. Let me ask \u2014 the compliance gap we discussed, where only 200 of your 1,000 patients are on prevention \u2014 what's that costing you monthly in missed prevention revenue?\"\n\nVet: \"I hadn't really calculated it that way.\"\n\nRep: \"If 800 unprotected patients could be moved even partially \u2014 say 100 more pets at $35/month \u2014 that's $3,500 in new monthly revenue. The product cost to your clinic would be about $1,800 for those patients. So the NET new revenue is $1,700 per month.\"\n\nVet: \"The margin is that good?\"\n\nRep: \"Yes \u2014 and that's conservative. Most clinics find it self-funding within the first month. Would it help if we structured a 90-day trial on your top 50 clients first, so you can validate the economics before committing to full inventory?\"\n\nVet: \"A trial I can do. That doesn't require budget approval.\"\n\n---",
+  "metadata": {
+    "file": "03_sales_scenarios.md",
+    "section": "Scenario 3: Budget Objection Handling",
+    "char_count": 1061
+  }
+}

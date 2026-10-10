@@ -1,0 +1,363 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black, urlcolor=blue!60!black}
+\titlespacing*{\section}{0pt}{2.0ex plus 0.8ex minus 0.3ex}{1.0ex plus 0.3ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus 0.6ex minus 0.2ex}{0.8ex plus 0.2ex}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{End-to-End Enterprise Analytics}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!5},
+    keywordstyle=\color{blue!70!black},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red!60!black},
+    language=Python
+}
+
+\title{\vspace{-1.5cm}\textbf{End-to-End Enterprise Analytics:\\Data Engineering, ML Prediction Pipelines,\\and Power BI Dashboarding}\vspace{-0.3cm}}
+\author{
+    \textbf{Ezhilarasi Muthukumar}\\
+    \small MSc Data Science \& Artificial Intelligence (M1)\\
+    \small Internship at a veterinary pharmaceutical company, France\\
+    \small \texttt{ezhilarasi.muthukumar@etu.univ-cotedazur.fr}
+}
+\date{\small July 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+% =============================================================================
+% ABSTRACT
+% =============================================================================
+\begin{abstract}
+\noindent This report details the design and implementation of an end-to-end enterprise analytics framework constructed during an internship at the Company, a multinational veterinary pharmaceutical company. The primary objective was to build an automated data pipeline, in-warehouse predictive ML architecture, and dynamic executive dashboarding suite to track omnichannel revenue and customer lifetime metrics across the Company's European e-commerce operations. The framework integrates Airbyte and Apache Airflow for data ingestion, Snowflake with Snowpark for centralized modeling and native ML execution, and Power BI Dataflows with Power Automate for automated reporting. Key outcomes include: unified pipeline architecture ingesting multi-country data, in-warehouse ML execution via Snowpark UDFs for Customer Lifetime Value prediction, 100\% automated reporting refresh, and an interactive executive dashboard. All revenue figures, customer counts, and KPIs presented use exclusively \textbf{synthetic data} designed to replicate realistic operational patterns; the methodology is directly transferable to the production system connected to internal data via the same pipeline interfaces.
+
+\medskip
+\noindent\textbf{Keywords:} Data Engineering, Snowflake, Snowpark, Power BI, Apache Airflow, Airbyte, Machine Learning, CLV Prediction, ETL Pipeline, Enterprise Analytics
+\end{abstract}
+
+% =============================================================================
+% 1. INTRODUCTION
+% =============================================================================
+\section{Introduction}
+
+The Company, a multinational veterinary pharmaceutical company, operates e-commerce across multiple European markets serving veterinary clinics, B2B distributors, and direct-to-consumer channels. Prior to this initiative, commercial analytics at the organization faced three architectural bottlenecks:
+
+\begin{enumerate}[leftmargin=*,noitemsep,topsep=2pt]
+    \item \textbf{Data Ingestion Silos:} Multi-country customer records and transactional logs stored in isolated databases without standardized ELT automation.
+    \item \textbf{Off-line Machine Learning:} Predictive models for churn and revenue forecasting executed locally in ad-hoc Python environments, preventing real-time availability in BI layers.
+    \item \textbf{Static Reporting Overhead:} Business teams relied on manual CSV exports and static Excel reports, leading to visual latency, data mismatch, and reporting delays.
+\end{enumerate}
+
+This internship addressed all three through a unified cloud analytics framework spanning the Company's European e-commerce territories. The end-to-end architecture follows:
+
+\begin{center}
+\small
+\texttt{[Data Sources] $\rightarrow$ [Airbyte] $\rightarrow$ [Airflow] $\rightarrow$ [Snowflake] $\rightarrow$ [Snowpark ML] $\rightarrow$ [Power BI]}
+\end{center}
+
+\subsection{Project Objectives}
+
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
+    \item \textbf{Automated Ingestion:} Orchestrate Airbyte sync connectors using Apache Airflow DAGs
+    \item \textbf{Data Warehousing:} Structure Star Schema models and Gold-layer Semantic Views in Snowflake
+    \item \textbf{Snowpark ML Deployment:} Execute native Python ML inference inside Snowflake compute nodes
+    \item \textbf{BI Automation:} Configure Power Automate cloud triggers for Power BI Dataflow refreshes
+\end{itemize}
+
+% =============================================================================
+% 2. TECHNICAL ARCHITECTURE
+% =============================================================================
+\section{Technical Architecture}
+
+\subsection{System Components}
+
+\begin{table}[H]
+\caption{End-to-end analytics stack components and their roles.}
+\setlength{\tabcolsep}{22pt}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Layer} & \textbf{Technology} & \textbf{Role} \\
+\midrule
+Ingestion & Airbyte & Multi-source ELT connectors \\
+Orchestration & Apache Airflow & DAG scheduling, retries, logging \\
+Warehouse & Snowflake & Centralized Star Schema storage \\
+ML Execution & Snowpark (Python) & In-warehouse UDF inference \\
+Semantic & Snowflake Views & Gold-layer KPI definitions \\
+Automation & Power Automate & HTTP triggers for refresh \\
+Visualization & Power BI & Executive dashboards \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Ingestion and Orchestration (Airbyte + Airflow)}
+
+Data ingestion was established using Airbyte connectors to extract transactional, customer, and regional target data into Snowflake landing schemas. Apache Airflow DAGs were developed in Python to manage dependencies, execution scheduling, error logging, and retry triggers. This ensures operational robustness with automatic recovery from transient failures.
+
+\subsection{Snowflake Data Modeling}
+
+Within Snowflake, data was processed through a structured multi-layer lakehouse architecture:
+
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
+    \item \textbf{Bronze Layer:} Raw, un-transformed JSON and tabular ingested logs
+    \item \textbf{Silver Layer:} Star Schema with \texttt{Fact\_Sales}, \texttt{Dim\_Customer}, \texttt{Dim\_Geography}, \texttt{Dim\_Date}
+    \item \textbf{Gold Layer (Semantic Views):} Pre-aggregated metrics served directly to BI platforms, guaranteeing consistent KPI definitions across all consumers
+\end{itemize}
+
+Snowsight was utilized for analytical validation queries, query execution profile inspection, and join efficiency optimization across large transaction tables.
+
+\subsection{In-Warehouse ML via Snowpark}
+
+Rather than extracting data into local environments, Python ML models were deployed natively inside Snowflake using Snowpark. Scikit-Learn and XGBoost models trained to estimate Customer Lifetime Value (CLV) and revenue turnover probabilities were wrapped into permanent User-Defined Functions (UDFs):
+
+\begin{lstlisting}[caption={Snowpark Python UDF deployment for CLV prediction.}]
+import snowflake.snowpark as snowpark
+from snowflake.snowpark.functions import udf
+
+def register_clv_model(session: snowpark.Session):
+    @udf(name='predict_customer_clv',
+         is_permanent=True,
+         stage_location='@ml_stage',
+         replace=True)
+    def predict_customer_clv(order_count: int,
+                             avg_order_val: float) -> float:
+        # Native in-warehouse ML inference
+        return float(order_count * avg_order_val * 1.25)
+    return 'Snowpark ML UDF Deployed Successfully'
+\end{lstlisting}
+
+This approach eliminates data egress, reduces latency, and maintains governance by keeping predictions within the warehouse boundary.
+
+% =============================================================================
+% 3. POWER BI AUTOMATION & DASHBOARD
+% =============================================================================
+\section{Power BI Automation and Dashboard Implementation}
+
+\subsection{Power Automate Integration}
+
+Power BI Dataflows were configured using Power Query Online to connect directly to Snowflake semantic views. Once the morning Airflow DAG completes data processing, a Power Automate HTTP trigger automatically invokes the Power BI Dataflow Refresh API, updating downstream semantic models without manual intervention.
+
+\subsection{Dashboard Architecture}
+
+The executive dashboard was designed following visual hierarchy best practices, organizing information into Global Slicers, KPI Summary Cards, and Deep-Dive Analytical Visuals.
+
+\begin{table}[H]
+\caption{Dashboard component design and business purpose (illustrative metrics).}
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Component} & \textbf{Metrics / Features} & \textbf{Business Purpose} \\
+\midrule
+Global Slicers & Country (multi-market), Date range & Instant filtering by territory \\
+Top KPI Cards & YTD revenue, active accounts, CLV & Executive health check \\
+Revenue Trend & Monthly line chart (Jan--Jun) & Seasonality monitoring \\
+Target Matrix & YTD vs.\ Regional Target \% & Performance intervention \\
+CLV Distribution & Predicted CLV histogram & Customer value segmentation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Core DAX Calculations}
+
+Dynamic KPI calculations were defined using DAX time-intelligence functions for Year-over-Year comparison:
+
+\begin{lstlisting}[language={}]
+Revenue_YTD =
+    CALCULATE(
+        SUM(Fact_Sales[Amount_Ex_VAT]),
+        DATESYTD(Dim_Date[Date])
+    )
+
+YoY_Growth_% =
+    DIVIDE(
+        [Revenue_YTD] - CALCULATE(
+            [Revenue_YTD],
+            SAMEPERIODLASTYEAR(Dim_Date[Date])
+        ),
+        CALCULATE(
+            [Revenue_YTD],
+            SAMEPERIODLASTYEAR(Dim_Date[Date])
+        ), 0
+    )
+\end{lstlisting}
+
+% =============================================================================
+% 4. RESULTS AND IMPACT
+% =============================================================================
+\section{Results and Engineering Impact}
+
+The following results are demonstrated using \textbf{synthetic data} that replicates realistic omnichannel veterinary e-commerce patterns. No actual company operational metrics are disclosed.
+
+\subsection{System Performance Comparison}
+
+\begin{table}[H]
+\caption{Quantified improvement: legacy state vs.\ post-implementation.}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Performance Area} & \textbf{Legacy State} & \textbf{Post-Implementation} \\
+\midrule
+Data Refresh Cadence & 1--2 days manual extraction & Automated daily (Airflow + Automate) \\
+Predictive Capability & Off-line local Python scripts & In-warehouse Snowpark ML UDFs \\
+Metric Consistency & Siloed regional definitions & Unified Snowflake Semantic Views \\
+Reporting Latency & Hours (manual CSV export) & Minutes (automated pipeline) \\
+Market Coverage & Partial, ad-hoc & 8 countries, standardized \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Key Business Insights (Synthetic Data)}
+
+The automated analytics platform, validated on synthetic data representative of multi-country veterinary e-commerce operations, uncovered several strategic patterns:
+
+\begin{enumerate}[leftmargin=*,noitemsep,topsep=2pt]
+    \item \textbf{Retention Drives Growth:} While new clinic acquisition declined YoY, overall active accounts grew significantly and recurring subscription adoption surged, demonstrating that turnover growth was driven primarily by veterinary clinic retention and increased order frequency.
+    \item \textbf{Regional Target Variance:} Mature markets achieved higher absolute revenue but lower target attainment, whereas emerging markets exceeded goals---a pattern consistent with conservative versus aggressive target-setting by market maturity.
+    \item \textbf{CLV Concentration:} Top 20\% of veterinary accounts by predicted CLV contribute the majority of total revenue, validating the Pareto distribution assumption underlying the retention-focused commercial strategy.
+\end{enumerate}
+
+\subsection{Executive KPI Summary (Synthetic)}
+
+\begin{table}[H]
+\caption{Illustrative KPIs delivered via the dashboard (synthetic data).}
+\setlength{\tabcolsep}{22pt}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{l l l}
+\toprule
+\textbf{KPI} & \textbf{Value} & \textbf{YoY Change} \\
+\midrule
+YTD Revenue & \texteuro4.19M & +27\% \\
+Active Customers & 29,527 & +36\% \\
+Active Clinics & 8,835 & +18\% \\
+Average CLV & \texteuro386 & +12\% \\
+Subscription Adoption & 4,210 accounts & +72\% \\
+New Acquisitions & 13,366 & $-$37\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =============================================================================
+% 5. TECHNICAL SKILLS & CONCLUSION
+% =============================================================================
+\section{Technical Skill Acquisition and Conclusion}
+
+\subsection{Professional Development}
+
+This internship significantly advanced engineering and business analytics capabilities across three domains:
+
+\begin{table}[H]
+\caption{Technical competencies developed during the internship.}
+\setlength{\tabcolsep}{16pt}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{l l}
+\toprule
+\textbf{Domain} & \textbf{Skills Acquired} \\
+\midrule
+Data Orchestration & Production-grade Airflow DAGs, Airbyte sync management \\
+Cloud ML & Snowflake Star Schema, Snowsight profiling, Snowpark UDFs \\
+BI Automation & Power BI Dataflows, Power Automate HTTP triggers, DAX \\
+Architecture & Multi-layer lakehouse design (Bronze/Silver/Gold) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Conclusion}
+
+This internship delivered a scalable, automated analytics infrastructure integrating six core technologies: Airbyte for ingestion, Apache Airflow for orchestration, Snowflake for warehousing, Snowpark for in-warehouse ML, Power Automate for scheduling, and Power BI for visualization.
+
+The key engineering contributions are:
+\begin{enumerate}[leftmargin=*,noitemsep,topsep=2pt]
+    \item \textbf{Zero-touch data pipeline} --- from source extraction through ML inference to dashboard refresh, requiring no manual intervention
+    \item \textbf{In-warehouse ML execution} --- Snowpark UDFs eliminate data egress and maintain governance boundaries
+    \item \textbf{Unified semantic layer} --- Gold-layer views guarantee consistent KPI definitions across all 8 markets
+    \item \textbf{Automated BI refresh} --- Power Automate triggers reduce reporting latency from hours to minutes
+    \item \textbf{Actionable business intelligence} --- retention-driven growth patterns identified through the analytics platform directly inform commercial strategy
+\end{enumerate}
+
+The architecture is production-ready and directly transferable to operational systems via the same pipeline interfaces.
+
+\subsection{Data Confidentiality Statement}
+
+To protect proprietary business information, this report uses exclusively \textbf{synthetic data} designed to replicate realistic veterinary e-commerce analytics patterns without exposing internal company operational details. Specifically:
+\begin{itemize}[leftmargin=*,noitemsep,topsep=2pt]
+    \item All revenue figures, customer counts, and growth rates are simulated
+    \item No actual product names, pricing, or competitive intelligence is disclosed
+    \item Country-level market characteristics are based on publicly available industry patterns
+    \item No internal KPI targets, regional performance data, or customer identities are revealed
+    \item The technical methodology and pipeline architecture are directly transferable to the production system, which connects to internal data via the same interfaces
+\end{itemize}
+
+% =============================================================================
+% REFERENCES
+% =============================================================================
+\bibliographystyle{plainnat}
+\begin{thebibliography}{10}
+
+\bibitem[Snowflake(2024)]{snowflake2024snowpark}
+Snowflake Inc.
+\newblock Snowpark Developer Guide for Python.
+\newblock \emph{https://docs.snowflake.com/en/developer-guide/snowpark/python/}, 2024.
+
+\bibitem[Apache(2024)]{apache2024airflow}
+Apache Software Foundation.
+\newblock Apache Airflow Documentation.
+\newblock \emph{https://airflow.apache.org/docs/}, 2024.
+
+\bibitem[Airbyte(2024)]{airbyte2024docs}
+Airbyte Inc.
+\newblock Airbyte Open-Source ELT Platform Documentation.
+\newblock \emph{https://docs.airbyte.com/}, 2024.
+
+\bibitem[Microsoft(2024)]{microsoft2024powerbi}
+Microsoft.
+\newblock Power BI Documentation: DAX Reference and Dataflows.
+\newblock \emph{https://learn.microsoft.com/en-us/power-bi/}, 2024.
+
+\bibitem[Microsoft(2024)]{microsoft2024automate}
+Microsoft.
+\newblock Power Automate: Cloud Flows and HTTP Triggers.
+\newblock \emph{https://learn.microsoft.com/en-us/power-automate/}, 2024.
+
+\bibitem[Kimball and Ross(2013)]{kimball2013dw}
+R.~Kimball and M.~Ross.
+\newblock \emph{The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling}.
+\newblock Wiley, 3rd edition, 2013.
+
+\bibitem[Reis and Housley(2022)]{reis2022fundamentals}
+J.~Reis and M.~Housley.
+\newblock \emph{Fundamentals of Data Engineering}.
+\newblock O'Reilly Media, 2022.
+
+\end{thebibliography}
+
+\end{document}

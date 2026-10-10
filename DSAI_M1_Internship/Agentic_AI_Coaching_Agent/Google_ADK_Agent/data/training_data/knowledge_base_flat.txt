@@ -1,0 +1,755 @@
+--- SPIN Selling Methodology — Training Reference (01_spin_methodology.md) ---
+# SPIN Selling Methodology — Training Reference
+
+--- Overview (01_spin_methodology.md) ---
+## Overview
+
+SPIN Selling is a consultative sales methodology developed by Neil Rackham based on
+research involving 35,000+ sales calls. It shifts sales conversations from pitching
+products to understanding and solving customer problems.
+
+SPIN stands for: Situation, Problem, Implication, Need-Payoff.
+
+---
+
+--- Phase 1: Situation Questions (01_spin_methodology.md) ---
+## Phase 1: Situation Questions
+
+### Purpose
+Gather facts about the customer's current state. Establish context before diving
+into problems.
+
+### Characteristics
+- Factual, non-threatening questions
+- Should be brief — don't over-ask (shows you didn't do homework)
+- Best when you've pre-researched the customer
+- Time-focused reps limit situation questions to 2-3 max
+
+### Examples for Animal Pharma (company context)
+- "How many veterinarians practice at your clinic?"
+- "What's your approximate monthly patient volume for companion animals?"
+- "Which parasiticide brands are you currently stocking?"
+- "How do you currently handle inventory reordering for pharma products?"
+- "What percentage of your patients are on preventive parasite programs?"
+- "How does your clinic typically evaluate new pharmaceutical products?"
+
+### Time-Focus Tips
+- Do your research BEFORE the call (clinic website, LinkedIn, industry reports)
+- Limit situation questions to under 3 minutes of the conversation
+- Prioritize questions that directly lead to problem discovery
+- Skip questions where the answer is publicly available
+
+### Budget-Focus Tips
+- Include questions about current spend: "What's your approximate monthly spend on parasiticides?"
+- Understand decision-making: "Who handles pharmaceutical purchasing decisions?"
+- Gauge budget cycles: "When does your annual budget planning typically happen?"
+
+---
+
+--- Phase 2: Problem Questions (01_spin_methodology.md) ---
+## Phase 2: Problem Questions
+
+### Purpose
+Identify difficulties, dissatisfactions, and challenges the customer faces.
+These reveal pain points your product can solve.
+
+### Characteristics
+- Open-ended, exploratory questions
+- Focus on gaps between current state and desired state
+- Listen for emotional signals (frustration, concern)
+- Build on situation answers naturally
+
+### Examples for Animal Pharma (company context)
+- "What challenges do you face with pet owner compliance on parasite prevention?"
+- "Are there any efficacy concerns with your current parasiticide options?"
+- "How often do you see treatment failures or re-infestations?"
+- "What frustrations do your staff have with current product administration?"
+- "Do you encounter issues with product palatability or pet owner resistance?"
+- "Are there gaps in your current product range for specific parasite coverage?"
+- "What problems arise with your current supplier's delivery reliability?"
+
+### Time-Focus Tips
+- Ask 3-5 well-targeted problem questions (not 15 generic ones)
+- If a problem resonates (customer elaborates), go deeper on THAT one
+- Don't rush to solution mode — sit with the problem
+- Allocate 5-7 minutes for problem exploration
+
+### Budget-Focus Tips
+- Quantify problems: "How much does a treatment failure cost per case?"
+- Connect to revenue: "Do compliance issues affect your revenue from preventive programs?"
+- Frame waste: "How much expired product do you discard annually?"
+
+---
+
+--- Phase 3: Implication Questions (01_spin_methodology.md) ---
+## Phase 3: Implication Questions
+
+--- Purpose (01_spin_methodology.md) ---
+### Purpose
+Amplify the severity of the problem. Help the customer see the full cost/impact
+of NOT solving the problem. This creates urgency without being pushy.
+
+--- Characteristics (01_spin_methodology.md) ---
+### Characteristics
+- Forward-looking: "What happens if this continues?"
+- Connect to business impact: revenue, time, reputation, patient outcomes
+- Emotional but professional — show you care about their success
+- This is where average reps lose and great reps win
+
+--- Examples for Animal Pharma (company context) (01_spin_methodology.md) ---
+### Examples for Animal Pharma (company context)
+- "If treatment failures continue at this rate, how does that affect client trust in your clinic?"
+- "What's the downstream impact when pet owners stop their prevention programs?"
+- "How does staff frustration with difficult-to-administer products affect your team retention?"
+- "If competitor clinics offer better prevention programs, could that affect your client base?"
+- "What happens to your bottom line when you have to provide free retreatments?"
+- "How does unreliable supply affect your ability to maintain consistent patient protocols?"
+- "If compliance rates stay at 30%, what does that mean for disease incidence in your patient population?"
+
+--- Time-Focus Tips (01_spin_methodology.md) ---
+### Time-Focus Tips
+- Pick the TOP 1-2 problems and go deep on implications (don't spread thin)
+- Allocate 5-8 minutes here — this is where deals are won
+- Use silence after asking — let the customer process the weight of the implication
+- If time is short, ask ONE powerful implication question that connects to revenue
+
+--- Budget-Focus Tips (01_spin_methodology.md) ---
+### Budget-Focus Tips
+- Quantify: "If each retreatment costs $X and you have Y failures per month, that's $Z annually"
+- Opportunity cost: "What could your clinic do with the time spent on retreatments?"
+- Long-term projection: "Over 3 years, how does this compliance gap compound?"
+
+---
+
+--- Phase 4: Need-Payoff Questions (01_spin_methodology.md) ---
+## Phase 4: Need-Payoff Questions
+
+--- Purpose (01_spin_methodology.md) ---
+### Purpose
+Get the customer to articulate the VALUE of solving the problem. Let THEM say
+why a solution matters — this is 10x more powerful than you stating benefits.
+
+--- Characteristics (01_spin_methodology.md) ---
+### Characteristics
+- Solution-oriented but customer-voiced
+- The customer sells themselves on the value
+- Leads naturally to your product presentation
+- Should feel like a relief after the weight of implications
+
+--- Examples for Animal Pharma (company context) (01_spin_methodology.md) ---
+### Examples for Animal Pharma (company context)
+- "If you could reduce retreatment rates by 40%, what would that mean for your clinic?"
+- "How would a more palatable product improve your compliance conversations with pet owners?"
+- "What would it mean for your team if product administration took half the time?"
+- "If you had a reliable monthly delivery schedule, how would that change your inventory management?"
+- "How would a broader spectrum product simplify your parasite prevention protocols?"
+- "If compliance rates increased to 60%, what would that do to your preventive care revenue?"
+- "What value would you place on having a dedicated pharmaceutical partner vs. just a supplier?"
+
+--- Time-Focus Tips (01_spin_methodology.md) ---
+### Time-Focus Tips
+- Ask 2-3 need-payoff questions MAX — you want to transition to your solution
+- The entire SPIN conversation should take 15-25 minutes depending on complexity
+- Once the customer has articulated need-payoff, THAT'S your transition to presenting
+- Budget remaining time for your product presentation and next steps
+
+--- Budget-Focus Tips (01_spin_methodology.md) ---
+### Budget-Focus Tips
+- Get them to quantify: "What would a 40% reduction in failures save you annually?"
+- ROI language: "If the investment is $X monthly and the savings are $Y, does that work?"
+- Decision frame: "Given what you've described, what budget would be justified to solve this?"
+
+---
+
+--- SPIN Time Framework (25-Minute Sales Call) (01_spin_methodology.md) ---
+## SPIN Time Framework (25-Minute Sales Call)
+
+| Phase | Duration | Questions |
+|-------|----------|-----------|
+| Situation | 2-3 min | 2-3 questions (pre-research reduces these) |
+| Problem | 5-7 min | 3-5 questions (go deeper on resonant ones) |
+| Implication | 5-8 min | 2-4 questions (this is where value is built) |
+| Need-Payoff | 3-5 min | 2-3 questions (customer articulates value) |
+| Presentation | 5-7 min | Product solution aligned to stated needs |
+| Next Steps | 2-3 min | Clear commitment (trial, order, follow-up meeting) |
+
+---
+
+--- SPIN Budget Framework (01_spin_methodology.md) ---
+## SPIN Budget Framework
+
+### Cost of Inaction
+Always help the customer see the cost of NOT solving the problem:
+- Direct costs: retreatment, wasted inventory, staff overtime
+- Indirect costs: client churn, reputation damage, missed revenue
+- Opportunity costs: what else could be done with recovered time/money
+
+### ROI Positioning
+Frame your solution in terms of return:
+- "The product costs $X/month, but saves $Y in retreatment costs"
+- "At $Z per unit, your compliance revenue increase covers the cost 3x over"
+- "The time savings alone justify the investment within 2 months"
+
+### Budget Qualification
+Know when budget is/isn't available:
+- "Is this something budgeted for this quarter, or would it be next fiscal year?"
+- "If the ROI works, is there a procurement process, or can you make this decision?"
+- "What would need to be true for this to fit within your current budget?"
+
+--- Company Product Knowledge — Sales Training Reference (02_company_product_knowledge.md) ---
+# Company Product Knowledge — Sales Training Reference
+
+--- Company Overview (02_company_product_knowledge.md) ---
+## Company Overview
+
+The Company is a global animal health company dedicated exclusively to animal health.
+A long-established international business, the Company develops, manufactures, and distributes
+pharmaceutical products and services for companion animals and livestock.
+
+### Key Facts
+- Headquarters: Europe
+- Presence: 50+ countries
+- Focus: 100% dedicated to animal health (no human pharma division)
+- Segments: Companion Animals, Food-Producing Animals
+- Strengths: Parasiticides, Dermatology, Dental care, Vaccines
+
+---
+
+--- Core Product Categories (02_company_product_knowledge.md) ---
+## Core Product Categories
+
+### 1. Parasiticides (Key Revenue Driver)
+
+#### Companion Animals
+- **Endoparasites** (internal parasites: worms, heartworm)
+  - Broad-spectrum dewormers
+  - Heartworm prevention
+  - Combination products (multi-parasite coverage)
+
+- **Ectoparasites** (external parasites: fleas, ticks, mites)
+  - Topical spot-on treatments
+  - Oral chewable treatments
+  - Long-acting collar options
+  - Environmental treatments
+
+#### Key Selling Points
+- Broad-spectrum efficacy (covers multiple parasite types in one product)
+- Palatability for oral products (high acceptance rates)
+- Safety profile across breeds and sizes
+- Convenient dosing schedules (monthly, quarterly)
+- Cost-effective per-dose compared to premium competitors
+
+### 2. Dermatology
+- Medicated shampoos and conditioners
+- Ear care products
+- Allergy management
+- Antimicrobial treatments
+
+### 3. Dental Care
+- Enzymatic toothpastes
+- Dental chews
+- Water additives
+- Professional dental products for clinics
+
+### 4. Vaccines
+- Core vaccines for dogs and cats
+- Kennel cough prevention
+- Regional disease vaccines
+
+---
+
+--- Target Customer Segments (02_company_product_knowledge.md) ---
+## Target Customer Segments
+
+### Veterinary Clinics (Primary)
+- Small animal general practice (60% of revenue)
+- Multi-vet practices and hospital groups
+- Mixed practice (companion + large animal)
+
+### Key Decision Makers
+| Role | Influence | Primary Concern |
+|------|-----------|-----------------|
+| Practice Owner/Partner | Final budget authority | ROI, practice growth |
+| Head Veterinarian | Clinical protocols | Efficacy, safety |
+| Practice Manager | Operations | Cost per unit, supplier reliability |
+| Veterinary Nurse/Technician | Daily use | Ease of use, patient compliance |
+
+### Buying Motivations
+- **Price-sensitive clinics**: Total cost of ownership, bulk discounts, margins
+- **Quality-focused clinics**: Efficacy data, safety profile, clinical evidence
+- **Convenience-focused**: Ease of administration, client compliance tools
+- **Growth-focused**: Compliance programs that drive recurring revenue
+
+---
+
+--- Competitive Landscape (02_company_product_knowledge.md) ---
+## Competitive Landscape
+
+| Competitor | Strengths | Company Advantage |
+|-----------|-----------|------------------|
+| Competitor A (oral flea/tick) | Brand recognition, oral flea/tick | Broader portfolio, price point |
+| Competitor B (market leader) | Market leader, wide range | Dedicated animal health focus, service |
+| Competitor C (retail-strong) | Strong retail presence | Vet-exclusive relationship, margins |
+| Competitor D (long-acting) | Long-acting (12 weeks) | Monthly engagement, compliance programs |
+
+### Company Differentiators
+1. **100% Animal Health Focus** — Not a side business of a human pharma company
+2. **Partner Approach** — Dedicated rep support, training, marketing materials
+3. **Clinic Margins** — Competitive pricing that protects clinic profitability
+4. **Compliance Programs** — Tools to help clinics build recurring prevention revenue
+5. **Product Range** — Parasiticides + dental + dermatology = one supplier relationship
+
+---
+
+--- Common Objections and Responses (02_company_product_knowledge.md) ---
+## Common Objections and Responses
+
+### "We're happy with our current parasiticide brand"
+**SPIN Approach**: Don't challenge directly. Ask Problem questions:
+- "That's great. Are there any cases where you see compliance drop-off?"
+- "How do your clients respond to the pricing of the current product?"
+- "Any situations where the spectrum of coverage leaves gaps?"
+
+### "Your product is cheaper — does that mean lower quality?"
+**Response**: "Our pricing reflects our dedicated animal health model — we don't subsidize human pharma R&D costs. Our efficacy data is peer-reviewed and published. Let me share the clinical studies."
+
+### "We don't have budget to switch products right now"
+**SPIN Approach**: Use Implication questions to build urgency:
+- "I understand budget is tight. What's the cost of the compliance gap we discussed?"
+- "If we could start with a trial on your highest-volume SKU, would that work within current budget?"
+
+### "My clients won't pay for a product they don't recognize"
+**Response**: "We provide co-branded clinic materials so the recommendation comes from YOU, their trusted vet. Client trust is in your clinic brand, not the pharma brand."
+
+---
+
+--- Sales Metrics and KPIs (02_company_product_knowledge.md) ---
+## Sales Metrics and KPIs
+
+### Rep Performance Indicators
+- Conversion rate (meetings → trials → orders)
+- Average deal size (monthly recurring value)
+- Compliance program enrollments
+- Reorder rate (retention)
+- Call-to-close time (time-focus metric)
+
+### Budget-Focused Metrics
+- Cost per acquisition (CPA) for new clinic accounts
+- Revenue per call (efficiency)
+- Margin protection (not over-discounting)
+- ROI per clinic (annual value vs. cost to service)
+
+---
+
+--- Time-Focused Selling for Company Reps (02_company_product_knowledge.md) ---
+## Time-Focused Selling for Company Reps
+
+### Pre-Call Preparation (5-10 minutes)
+1. Check clinic website for size, services, team
+2. Review any prior interactions or orders
+3. Identify likely pain points based on clinic type
+4. Prepare 2-3 targeted Situation questions
+5. Have product samples and pricing ready
+
+### Call Structure (25 minutes total)
+1. Opening and rapport (2 min)
+2. SPIN conversation (15-18 min)
+3. Product presentation aligned to needs (5 min)
+4. Next steps and commitment (2-3 min)
+
+### Post-Call Actions (5 minutes)
+1. Log call notes and outcomes in CRM
+2. Send follow-up email with promised materials
+3. Schedule next touchpoint
+4. Update pipeline and forecast
+
+### Time Traps to Avoid
+- Spending too long on rapport/small talk (max 2 min)
+- Asking too many Situation questions (research first!)
+- Presenting product features before establishing need
+- Leaving without a clear next step
+- Over-explaining when the customer is ready to buy
+
+--- SPIN Sales Scenarios — Practice Conversations (03_sales_scenarios.md) ---
+# SPIN Sales Scenarios — Practice Conversations
+
+--- Scenario 1: Small Urban Veterinary Clinic (03_sales_scenarios.md) ---
+## Scenario 1: Small Urban Veterinary Clinic
+
+--- Context (03_sales_scenarios.md) ---
+### Context
+- Clinic: PawCare Vet, single veterinarian practice in a suburban area
+- 800 patients/month, 70% dogs, 30% cats
+- Currently using a competitor's topical flea/tick product
+- Compliance rate for prevention: ~25% of patients
+- Budget-conscious, owner makes all purchasing decisions
+
+--- Ideal SPIN Conversation (part 1) (03_sales_scenarios.md) ---
+### Ideal SPIN Conversation
+
+**Situation (2 min)**
+Rep: "Dr. Martinez, I see PawCare handles about 800 patients monthly — that's impressive for a solo practice. Which parasiticide are you currently recommending for flea and tick prevention?"
+
+Dr: "We've been using [Competitor Brand X] topical for about 3 years."
+
+Rep: "Got it. And roughly what percentage of your patient base is on a consistent prevention program?"
+
+Dr: "Honestly, probably around 25%. It's hard to get compliance up."
+
+**Problem (5 min)**
+Rep: "That 25% compliance is actually common — what do you think is the biggest barrier? Is it price resistance from pet owners, or something else?"
+
+Dr: "It's a mix. Some owners find the topical messy to apply. Others forget monthly. And yes, some push back on cost."
+
+Rep: "When clients find it messy or forget, what typically happens? Do you see them come back with infestations?"
+
+Dr: "Yes, every summer we get a wave of flea infestation cases that could have been prevented. It's frustrating."
+
+Rep: "How does your team feel about having those reactive conversations — 'your pet has fleas because you stopped prevention'?"
+
+Dr: "My tech hates it. It's awkward and the client feels judged."
+
+**Implication (6 min)**
+Rep: "If only 25% of your 800 patients are on prevention, that means about 600 pets are unprotected. In flea season, what does the treatment cost look like per infestation case?"
+
+Dr: "Usually $80-150 per case including exam, treatment, and home environment advice."
+
+--- Ideal SPIN Conversation (part 2) (03_sales_scenarios.md) ---
+Rep: "So if even 10% of unprotected pets come in with infestations — that's 60 cases at $100 average — $6,000 in reactive treatments. But your margin on reactive care vs. proactive prevention programs is different, right?"
+
+Dr: "Much lower. Reactive visits are one-off. Prevention is monthly recurring revenue."
+
+Rep: "So the compliance gap isn't just a pet health issue — it's potentially $50,000+ in annual prevention revenue that's not being captured. Does that number feel directionally correct?"
+
+Dr: "Yeah, probably more actually if you count heartworm prevention too."
+
+**Need-Payoff (3 min)**
+Rep: "If you could move compliance from 25% to even 40% — an additional 120 pets on monthly prevention — what would that mean for your practice?"
+
+Dr: "That's significant. Even at $30/month average, that's $3,600 extra monthly. $43,000 annually."
+
+Rep: "And if the product itself was easier to administer — like a palatable chew that owners actually enjoy giving — how would that change the compliance conversation?"
+
+Dr: "It removes the biggest objection. If it's easy and the pet likes it, owners stick with it."
+
+**Transition to Presentation**
+Rep: "That's exactly what I wanted to show you today. Our [Product] is a monthly flavored chew with 94% palatability in trials. Let me walk you through how clinics similar to yours have moved compliance from 25% to 45% within 6 months..."
+
+---
+
+--- Scenario 2: Multi-Vet Hospital Group (03_sales_scenarios.md) ---
+## Scenario 2: Multi-Vet Hospital Group
+
+--- Context (03_sales_scenarios.md) ---
+### Context
+- Clinic: Regional Animal Hospital, 5 veterinarians
+- 3,000 patients/month across companion animals
+- Centralized purchasing managed by practice manager
+- Currently split across 3 different parasiticide brands
+- Budget set quarterly, next review in 6 weeks
+- Key concern: supplier consolidation and margins
+
+--- Ideal SPIN Conversation (part 1) (03_sales_scenarios.md) ---
+### Ideal SPIN Conversation
+
+**Situation (2 min)**
+Rep: "Sarah, I understand Regional Animal Hospital handles about 3,000 patients monthly across your five vets. Your purchasing is centralized through you — is that correct?"
+
+Sarah (Practice Manager): "Yes, I handle all pharmaceutical procurement and budget allocation."
+
+Rep: "And currently you're working with multiple parasiticide brands — is that by design or did it evolve over time?"
+
+Sarah: "It evolved. Each vet had preferences, so we ended up with three different brands on the shelf."
+
+**Problem (5 min)**
+Rep: "Having three brands — does that create any inventory management challenges?"
+
+Sarah: "Definitely. We carry more SKUs than we need. Some products expire before we use them. It's waste."
+
+Rep: "What does the expired product cost look like annually?"
+
+Sarah: "Last year we wrote off about $4,500 in expired parasiticides. Not huge, but it's pure waste."
+
+Rep: "Beyond inventory, does having multiple protocols create any confusion for the support staff when dispensing?"
+
+Sarah: "Our newer techs sometimes grab the wrong dosage size or confuse the brands. We've had to redo dispensing a few times."
+
+**Implication (6 min)**
+Rep: "If dispensing errors lead to an underdose or wrong product, what's the clinical risk?"
+
+Sarah: "It hasn't caused a serious incident yet, but it's a liability concern. Our vets are nervous about it."
+
+--- Ideal SPIN Conversation (part 2) (03_sales_scenarios.md) ---
+Rep: "And from a budget perspective — you're managing three supplier relationships, three sets of terms, three reps calling you. What does that fragmentation cost in your time?"
+
+Sarah: "At least half a day per month just managing orders, reconciling invoices, and dealing with backorders from different suppliers. My time is worth more than that."
+
+Rep: "If I calculate that conservatively — half a day monthly at your billing rate, plus $4,500 in waste, plus the risk exposure — we're looking at $15,000-20,000 in annual cost of fragmentation. Does that align with your sense of it?"
+
+Sarah: "Probably, yes. It's a known problem but consolidation always feels like a big project."
+
+**Need-Payoff (4 min)**
+Rep: "What if you could consolidate to a single parasiticide partner that covers your full range — endo, ecto, combination products — with one order, one invoice, and one point of contact?"
+
+Sarah: "That would simplify things enormously. My concern is whether one brand can truly replace all three."
+
+Rep: "If the range covers 95% of your protocols, and the pricing delivers better margins than your current blended cost, would consolidation be worth evaluating?"
+
+Sarah: "Absolutely. If the numbers work and the vets are comfortable with the efficacy data, I'd push for it."
+
+Rep: "And with your quarterly budget review in 6 weeks — is that the right window to present a consolidation proposal?"
+
+Sarah: "Perfect timing actually. Bring me a proposal I can take to the partners."
+
+---
+
+--- Scenario 3: Budget Objection Handling (03_sales_scenarios.md) ---
+## Scenario 3: Budget Objection Handling
+
+### Context
+- Clinic has expressed interest but says "budget is tight this quarter"
+- Rep needs to use SPIN to reframe the budget conversation
+
+### Conversation
+
+Rep: "I hear you on budget being tight. Let me ask — the compliance gap we discussed, where only 200 of your 1,000 patients are on prevention — what's that costing you monthly in missed prevention revenue?"
+
+Vet: "I hadn't really calculated it that way."
+
+Rep: "If 800 unprotected patients could be moved even partially — say 100 more pets at $35/month — that's $3,500 in new monthly revenue. The product cost to your clinic would be about $1,800 for those patients. So the NET new revenue is $1,700 per month."
+
+Vet: "The margin is that good?"
+
+Rep: "Yes — and that's conservative. Most clinics find it self-funding within the first month. Would it help if we structured a 90-day trial on your top 50 clients first, so you can validate the economics before committing to full inventory?"
+
+Vet: "A trial I can do. That doesn't require budget approval."
+
+---
+
+--- Scenario 4: Time-Constrained Call (10 minutes only) (03_sales_scenarios.md) ---
+## Scenario 4: Time-Constrained Call (10 minutes only)
+
+### Context
+- Vet is between appointments, gives you only 10 minutes
+- Must compress SPIN into a shorter format
+
+### Compressed SPIN
+
+**Situation (1 min — max 1 question, you already researched)**
+Rep: "Dr. Chen, I know you're short on time so I'll be brief. I see your practice focuses on cats — roughly 500 feline patients monthly. What's your current feline parasiticide protocol?"
+
+**Problem (2 min — go straight to known pain point)**
+Rep: "Many cat-focused practices tell me the biggest challenge is owner compliance with topical applications — cats resist and owners give up. Is that true for your practice too?"
+
+**Implication (3 min — one powerful question)**
+Rep: "If owners are stopping prevention because application is stressful, and we see flea-allergic dermatitis cases spike every summer — what does that cost you in reactive appointments that could have been preventive revenue?"
+
+**Need-Payoff (2 min)**
+Rep: "If there was a palatable oral option specifically formulated for cats with 89% voluntary acceptance, would that change your compliance recommendation?"
+
+**Close (2 min)**
+Rep: "Let me leave you a sample box for 10 patients. Try it for 30 days. I'll check back on [date]. If your clients and cats respond well, we can discuss stocking. Fair?"
+
+---
+
+--- Anti-Patterns to Avoid (03_sales_scenarios.md) ---
+## Anti-Patterns to Avoid
+
+### 1. Feature Dumping (No SPIN)
+❌ "Let me tell you about our product. It has broad-spectrum efficacy, 94% palatability, monthly dosing, and costs $X per unit."
+✅ Use SPIN to establish need FIRST, then present features as solutions to stated problems.
+
+### 2. Premature Closing
+❌ "So can I sign you up for an order today?" (before establishing value)
+✅ Complete the SPIN cycle. Need-Payoff should make the close feel natural.
+
+### 3. Ignoring Budget Signals
+❌ Pushing for a large initial order when the customer signals budget constraints.
+✅ Offer a structured trial, start small, prove ROI, then expand.
+
+### 4. Spending 15 Minutes on Situation Questions
+❌ "Tell me everything about your practice..." (wastes time, feels like an interrogation)
+✅ Research beforehand. Ask max 2-3 situation questions to confirm what you know.
+
+### 5. Not Getting a Commitment
+❌ Ending with "I'll follow up sometime"
+✅ Always end with a specific next step: trial date, follow-up call, proposal deadline.
+
+--- Time-Focused and Budget-Focused Sales Coaching (04_time_budget_coaching.md) ---
+# Time-Focused and Budget-Focused Sales Coaching
+
+--- Time-Focused Selling Principles (04_time_budget_coaching.md) ---
+## Time-Focused Selling Principles
+
+--- The 80/20 Rule for Sales Calls (04_time_budget_coaching.md) ---
+### The 80/20 Rule for Sales Calls
+- 80% of your results come from 20% of your call time
+- The SPIN portion (establishing need) is the high-value 20%
+- Product features presentation should be brief and targeted
+- Administrative tasks should never steal from selling time
+
+--- Time Allocation for a Typical Day (8 hours) (04_time_budget_coaching.md) ---
+### Time Allocation for a Typical Day (8 hours)
+
+| Activity | Ideal Time | Common Mistake |
+|----------|-----------|----------------|
+| Pre-call research and planning | 1 hour | Skipped entirely |
+| Active selling calls (6 calls) | 4 hours | Calls run too long |
+| Travel and transitions | 1.5 hours | Inefficient routing |
+| CRM updates and admin | 1 hour | Done during prime selling hours |
+| Follow-up emails and proposals | 0.5 hours | Delayed by days |
+
+--- Key Time Metrics (04_time_budget_coaching.md) ---
+### Key Time Metrics
+- **Calls per day target**: 5-7 meaningful conversations
+- **Average call duration**: 20-30 minutes (not 60+)
+- **First appointment to close**: < 3 touches for standard orders
+- **Response time for follow-ups**: Same day, always
+
+--- Time Traps and Solutions (04_time_budget_coaching.md) ---
+### Time Traps and Solutions
+
+| Trap | Impact | Solution |
+|------|--------|----------|
+| Over-researching before calls | Fewer calls made | 5-10 min research cap per prospect |
+| Long rapport-building | Delays SPIN, annoys busy vets | 2 min max, then transition to value |
+| Presenting all product features | Listener fatigue, loss of focus | Only present features that match stated needs |
+| No clear close | Requires follow-up call (doubles time) | Always ask for specific next step |
+| Over-servicing small accounts | ROI negative | Tier accounts, allocate time by value |
+| Unqualified prospects | Wasted meeting time | Qualify via phone before in-person |
+| Perfectionist proposals | Delays decisions | 80% proposal delivered fast > 100% proposal delivered late |
+
+--- Call Compression Techniques (04_time_budget_coaching.md) ---
+### Call Compression Techniques
+1. **Stack Situation questions into one**: "I see you're a 3-vet practice with about 1,500 patients — is that still accurate?"
+2. **Lead with the hypothesis**: "Many practices your size struggle with compliance on topical parasiticides — is that true here?"
+3. **Combine Implication with numbers**: "At your volume, a 25% compliance gap means roughly $40K in unrealized prevention revenue annually."
+4. **Offer a low-friction next step**: Trial samples are faster than full proposals.
+
+---
+
+--- Budget-Focused Selling Principles (04_time_budget_coaching.md) ---
+## Budget-Focused Selling Principles
+
+--- Understanding Veterinary Clinic Economics (04_time_budget_coaching.md) ---
+### Understanding Veterinary Clinic Economics
+
+| Revenue Stream | Typical Margin | Relevance to Company |
+|---------------|---------------|---------------------|
+| Consultation fees | 80-90% | Indirect (compliance drives visits) |
+| Pharmaceutical sales | 30-50% | Direct (our products) |
+| Prevention programs | 40-60% | High (recurring revenue) |
+| Surgery | 70-80% | Indirect |
+| Dental procedures | 70-80% | Direct (company dental range) |
+| Retail (food, accessories) | 20-30% | Low |
+
+--- Budget Qualification Framework (04_time_budget_coaching.md) ---
+### Budget Qualification Framework
+
+**Before presenting pricing, understand:**
+1. Who has budget authority? (Owner, manager, or shared?)
+2. What's the budget cycle? (Annual, quarterly, or as-needed?)
+3. What's current spend in our category? (Establishes baseline)
+4. What's the decision timeline? (Urgency vs. long cycle)
+5. What's the switching cost? (Existing contracts, inventory to run down)
+
+--- The Budget Conversation (04_time_budget_coaching.md) ---
+### The Budget Conversation
+
+**Wrong approach**: "Our product costs $X. Can you afford it?"
+
+**Right approach (SPIN-aligned)**:
+1. Establish the COST OF THE PROBLEM (via Implication questions)
+2. Quantify the VALUE OF SOLVING IT (via Need-Payoff questions)
+3. THEN present pricing in context of the value established
+
+**Example**:
+- Problem cost established: $40K/year in missed prevention revenue
+- Solution cost: $500/month in additional inventory
+- ROI: $40K revenue opportunity vs. $6K annual cost = 6.7x return
+- Frame: "For $500/month, you're accessing $3,300/month in new revenue"
+
+--- Pricing Objection Responses (04_time_budget_coaching.md) ---
+### Pricing Objection Responses
+
+| Objection | Response Framework |
+|-----------|-------------------|
+| "It's too expensive" | "Compared to what? Let's look at cost per protected patient per month" |
+| "Competitor is cheaper per unit" | "Per unit, yes. But factor in compliance rate — cost per PROTECTED patient is lower with us" |
+| "We can't afford to switch" | "What's the cost of staying? We quantified $X in waste/missed revenue" |
+| "No budget this quarter" | "Would a funded trial (samples + 30 days) help you build the case for next quarter?" |
+| "Need to think about it" | "Of course. What specific numbers would help you make the decision?" |
+
+--- ROI Calculator Framework (04_time_budget_coaching.md) ---
+### ROI Calculator Framework
+
+```
+Monthly Revenue Opportunity:
+  Current patients on prevention: [A]
+  Total eligible patients: [B]
+  Compliance gap: [B - A] = [C]
+  Realistic conversion (next 6 months): [C × 15%] = [D]
+  Average monthly prevention revenue per patient: $35
+  New monthly revenue: [D × $35] = [E]
+
+Monthly Cost:
+  Additional inventory cost: [F]
+  
+Monthly NET Revenue: [E - F] = [G]
+Annual NET Revenue: [G × 12]
+ROI: [Annual NET Revenue] / [Annual Cost] × 100 = X%
+```
+
+--- Budget-Focused Call Preparation (04_time_budget_coaching.md) ---
+### Budget-Focused Call Preparation
+
+Before every call, know:
+1. Clinic's approximate monthly pharmaceutical spend (estimate from size)
+2. Your product's positioning vs. current brand pricing
+3. One ROI number you can share based on their patient volume
+4. A "trial" offer that requires minimal budget commitment
+5. Next budget review date for the clinic
+
+---
+
+--- Combining Time-Focus and Budget-Focus (04_time_budget_coaching.md) ---
+## Combining Time-Focus and Budget-Focus
+
+### The Efficient Value Conversation
+
+The best reps are BOTH time-efficient AND budget-savvy:
+- They don't waste time establishing value for a clinic that has no budget
+- They don't skip budget conversations with clinics that are clearly interested
+- They qualify FAST so they can invest deeply where it matters
+
+### Qualification Matrix
+
+| Signal | Time Investment | Budget Approach |
+|--------|----------------|-----------------|
+| High interest + has budget | Maximum (25 min call) | Full ROI case, propose now |
+| High interest + no budget | Moderate (15 min) | Seed trial, revisit at budget cycle |
+| Low interest + has budget | Brief (10 min) | Create urgency via Implication |
+| Low interest + no budget | Minimal (5 min) | Leave materials, follow up in 6 months |
+
+### The 5-Minute Qualification
+
+In the first 5 minutes, determine:
+1. Is there a problem worth solving? (One Problem question)
+2. Does the decision-maker know it's costing them? (One Implication question)
+3. Is there budget or timeline for action? (Direct question)
+
+If all three are YES → invest full SPIN call time.
+If any is NO → adjust strategy (shorter call, trial offer, defer).
+
+---
+
+--- Weekly Self-Coaching Questions (04_time_budget_coaching.md) ---
+## Weekly Self-Coaching Questions
+
+Every Friday, ask yourself:
+1. **Time**: Did I make 5+ quality calls this week? If not, what stole my time?
+2. **Budget**: Did I quantify ROI for every prospect? If not, what data do I need?
+3. **SPIN**: Did I resist presenting before completing Problem/Implication? Where did I slip?
+4. **Efficiency**: What's my average call-to-close ratio this month? Getting better or worse?
+5. **Pipeline**: Do I have enough qualified prospects for next week's target?
+

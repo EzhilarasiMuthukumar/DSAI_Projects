@@ -1,0 +1,92 @@
+[
+  {
+    "id": "test_01",
+    "query": "How should I start a sales conversation with a new veterinary clinic?",
+    "expected_behavior": "Should recommend starting with Situation questions, mention pre-call research, suggest 2-3 factual questions about clinic size and current products.",
+    "expected_topics": [
+      "situation questions",
+      "pre-call research",
+      "clinic size"
+    ],
+    "spin_phase": "situation"
+  },
+  {
+    "id": "test_02",
+    "query": "The vet says they're happy with their current flea treatment. What should I do?",
+    "expected_behavior": "Should NOT challenge directly. Should suggest Problem questions to uncover hidden dissatisfaction like compliance gaps or administration issues.",
+    "expected_topics": [
+      "problem questions",
+      "compliance",
+      "don't challenge directly"
+    ],
+    "spin_phase": "problem"
+  },
+  {
+    "id": "test_03",
+    "query": "How do I make the vet see the urgency of switching products?",
+    "expected_behavior": "Should recommend Implication questions that quantify the cost of the current problem. Connect to revenue impact, client retention, staff frustration.",
+    "expected_topics": [
+      "implication questions",
+      "cost quantification",
+      "urgency"
+    ],
+    "spin_phase": "implication"
+  },
+  {
+    "id": "test_04",
+    "query": "The clinic says they don't have budget for new products this quarter.",
+    "expected_behavior": "Should suggest quantifying cost of inaction, offering a low-commitment trial, identifying budget cycle timing, and framing ROI.",
+    "expected_topics": [
+      "budget objection",
+      "trial offer",
+      "ROI",
+      "cost of inaction"
+    ],
+    "spin_phase": "need-payoff"
+  },
+  {
+    "id": "test_05",
+    "query": "I only have 10 minutes with this vet. How do I run SPIN effectively?",
+    "expected_behavior": "Should provide compressed SPIN format: 1 situation question, lead with hypothesis for problem, one powerful implication, quick need-payoff, and offer low-friction next step.",
+    "expected_topics": [
+      "time-focused",
+      "compressed SPIN",
+      "10 minutes"
+    ],
+    "spin_phase": "all"
+  },
+  {
+    "id": "test_06",
+    "query": "Can you role-play as a veterinarian? I want to practice my SPIN questions.",
+    "expected_behavior": "Should enter role-play mode as a vet, present realistic responses, allow the rep to practice, then provide feedback on SPIN technique.",
+    "expected_topics": [
+      "role-play",
+      "practice",
+      "feedback"
+    ],
+    "spin_phase": "all"
+  },
+  {
+    "id": "test_07",
+    "query": "What ROI numbers should I bring to a multi-vet hospital?",
+    "expected_behavior": "Should mention: compliance gap revenue calculation, inventory waste from multiple brands, staff time savings from consolidation, and margin improvement.",
+    "expected_topics": [
+      "ROI",
+      "multi-vet",
+      "consolidation",
+      "budget-focused"
+    ],
+    "spin_phase": "need-payoff"
+  },
+  {
+    "id": "test_08",
+    "query": "What are common mistakes SPIN sellers make?",
+    "expected_behavior": "Should list anti-patterns: feature dumping, premature closing, too many situation questions, not getting commitment, ignoring budget signals.",
+    "expected_topics": [
+      "anti-patterns",
+      "feature dumping",
+      "premature close"
+    ],
+    "spin_phase": "all"
+  }
+]

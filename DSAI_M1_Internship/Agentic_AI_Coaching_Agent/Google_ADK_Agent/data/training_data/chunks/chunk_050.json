@@ -1,0 +1,11 @@
+{
+  "id": "04_time_budget_coaching.md::ROI Calculator Framework",
+  "source": "04_time_budget_coaching.md",
+  "section": "ROI Calculator Framework",
+  "content": "### ROI Calculator Framework\n\n```\nMonthly Revenue Opportunity:\n  Current patients on prevention: [A]\n  Total eligible patients: [B]\n  Compliance gap: [B - A] = [C]\n  Realistic conversion (next 6 months): [C \u00d7 15%] = [D]\n  Average monthly prevention revenue per patient: $35\n  New monthly revenue: [D \u00d7 $35] = [E]\n\nMonthly Cost:\n  Additional inventory cost: [F]\n  \nMonthly NET Revenue: [E - F] = [G]\nAnnual NET Revenue: [G \u00d7 12]\nROI: [Annual NET Revenue] / [Annual Cost] \u00d7 100 = X%\n```",
+  "metadata": {
+    "file": "04_time_budget_coaching.md",
+    "section": "ROI Calculator Framework",
+    "char_count": 484
+  }
+}

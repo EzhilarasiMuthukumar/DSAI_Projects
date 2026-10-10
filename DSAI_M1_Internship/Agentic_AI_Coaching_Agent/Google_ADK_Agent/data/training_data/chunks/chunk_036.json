@@ -1,0 +1,11 @@
+{
+  "id": "03_sales_scenarios.md::Scenario 4: Time-Constrained Call (10 minutes only)",
+  "source": "03_sales_scenarios.md",
+  "section": "Scenario 4: Time-Constrained Call (10 minutes only)",
+  "content": "## Scenario 4: Time-Constrained Call (10 minutes only)\n\n### Context\n- Vet is between appointments, gives you only 10 minutes\n- Must compress SPIN into a shorter format\n\n### Compressed SPIN\n\n**Situation (1 min \u2014 max 1 question, you already researched)**\nRep: \"Dr. Chen, I know you're short on time so I'll be brief. I see your practice focuses on cats \u2014 roughly 500 feline patients monthly. What's your current feline parasiticide protocol?\"\n\n**Problem (2 min \u2014 go straight to known pain point)**\nRep: \"Many cat-focused practices tell me the biggest challenge is owner compliance with topical applications \u2014 cats resist and owners give up. Is that true for your practice too?\"\n\n**Implication (3 min \u2014 one powerful question)**\nRep: \"If owners are stopping prevention because application is stressful, and we see flea-allergic dermatitis cases spike every summer \u2014 what does that cost you in reactive appointments that could have been preventive revenue?\"\n\n**Need-Payoff (2 min)**\nRep: \"If there was a palatable oral option specifically formulated for cats with 89% voluntary acceptance, would that change your compliance recommendation?\"\n\n**Close (2 min)**\nRep: \"Let me leave you a sample box for 10 patients. Try it for 30 days. I'll check back on [date]. If your clients and cats respond well, we can discuss stocking. Fair?\"\n\n---",
+  "metadata": {
+    "file": "03_sales_scenarios.md",
+    "section": "Scenario 4: Time-Constrained Call (10 minutes only)",
+    "char_count": 1330
+  }
+}

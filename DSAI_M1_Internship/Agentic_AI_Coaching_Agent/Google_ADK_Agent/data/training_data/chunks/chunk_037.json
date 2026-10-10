@@ -1,0 +1,11 @@
+{
+  "id": "03_sales_scenarios.md::Anti-Patterns to Avoid",
+  "source": "03_sales_scenarios.md",
+  "section": "Anti-Patterns to Avoid",
+  "content": "## Anti-Patterns to Avoid\n\n### 1. Feature Dumping (No SPIN)\n\u274c \"Let me tell you about our product. It has broad-spectrum efficacy, 94% palatability, monthly dosing, and costs $X per unit.\"\n\u2705 Use SPIN to establish need FIRST, then present features as solutions to stated problems.\n\n### 2. Premature Closing\n\u274c \"So can I sign you up for an order today?\" (before establishing value)\n\u2705 Complete the SPIN cycle. Need-Payoff should make the close feel natural.\n\n### 3. Ignoring Budget Signals\n\u274c Pushing for a large initial order when the customer signals budget constraints.\n\u2705 Offer a structured trial, start small, prove ROI, then expand.\n\n### 4. Spending 15 Minutes on Situation Questions\n\u274c \"Tell me everything about your practice...\" (wastes time, feels like an interrogation)\n\u2705 Research beforehand. Ask max 2-3 situation questions to confirm what you know.\n\n### 5. Not Getting a Commitment\n\u274c Ending with \"I'll follow up sometime\"\n\u2705 Always end with a specific next step: trial date, follow-up call, proposal deadline.",
+  "metadata": {
+    "file": "03_sales_scenarios.md",
+    "section": "Anti-Patterns to Avoid",
+    "char_count": 1012
+  }
+}

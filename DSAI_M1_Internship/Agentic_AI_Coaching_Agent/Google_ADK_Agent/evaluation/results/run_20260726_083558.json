@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "timestamp": "2026-07-26T08:35:57.262105",
+    "agent_name": "spin_coach",
+    "agent_model": "gemini-3.1-flash-lite",
+    "total_cases": 5,
+    "total_time_seconds": 18.3,
+    "avg_latency_ms": 3659.7,
+    "errors": 0
+  },
+  "responses": [
+    {
+      "test_id": "T01",
+      "response": "The **SPIN Selling methodology** is a powerful, questioning-based sales approach designed to uncover customer needs by moving them from simple surface-level facts to realizing the deeper impact of their problems. \n\nAt the Company, we use SPIN to ensure our conversations are **time-focused** (efficient and relevant) and **budget-focused** (ROI-driven). It prevents \"feature dumping\" and ensures you only present solutions when the vet/manager truly wants to hear them.\n\nHere is the breakdown of the four stages:\n\n### 1. S - Situation Questions (2\u20133 minutes)\n*   **Purpose:** Gather background data to understand the clinic's context.\n*   **Time-Focus:** Don't overdo these! Research before you call to minimize the need for these.\n*   **Example:** \"Dr. [Name], how many patients are currently on a monthly heartworm/parasiticide protocol?\"\n\n### 2. P - Problem Questions (5\u20137 minutes)\n*   **Purpose:** Reveal difficulties, dissatisfactions, or areas where the clinic is struggling. \n*   **Goal:** Get the customer to state the problem themselves.\n*   **Example:** \"With your current brand, are you seeing many compliance issues related to the application process?\"\n\n### 3. I - Implication Questions (5\u20138 minutes)\n*   **Purpose:** The most important phase. You explore the *consequences* of the problems identified. This moves the conversation from \"an annoyance\" to \"a business-critical issue\" that requires a budget.\n*   **Budget-Focus:** Quantify the pain. How much is this costing them in staff time, inventory waste, or missed revenue?\n*   **Example:** \"When a client struggles with application and stops treatment, what is the clinical cost of an infestation case, and how much staff time is spent managing those disgruntled clients?\"\n\n### 4. N - Need-Payoff Questions (3\u20135 minutes)\n*   **Purpose:** Get the client to tell *you* the benefits of your solution. This turns them into the seller, reducing resistance.\n*   **Goal:** Focus on value and ROI.\n*   **Example:** \"If we could move 20% more patients onto a simplified, high-compliance protocol, what impact would that have on your yearly parasiticide revenue?\"\n\n---\n\n### Why this works for you:\n*   **Efficiency:** By focusing on the *customer's* problem rather than just listing product benefits, you shorten the sales cycle.\n*   **Credibility:** You transition from a \"product pusher\" to a \"business consultant\" who understands the economic and clinical health of their clinic.\n*   **Budget Alignment:** By the time you discuss price, the customer has already validated that the *cost of the problem* is significantly higher than the *investment in your product*.\n\n**Would you like to try a quick role-play to practice moving from a Problem question to an Implication question?** Just let me know what clinic type you'd like to practice with.",
+      "tool_calls": [
+        "search_knowledge_base"
+      ],
+      "latency_ms": 3932.3,
+      "error": null
+    },
+    {
+      "test_id": "T02",
+      "response": "To ensure your calls are both efficient and effective, you should treat your 25-minute window as a structured consultation. The goal is to maximize the time spent on **Implication** (the \"why\") and **Need-Payoff** (the \"value\"), rather than on features.\n\nHere is the ideal time-allocation framework for a 25-minute call:\n\n### 25-Minute SPIN Call Structure\n\n| Phase | Time | Focus |\n| :--- | :--- | :--- |\n| **Situation** | 2\u20133 min | **Context:** Confirm 1-2 facts, then transition immediately to a problem. |\n| **Problem** | 5\u20137 min | **Discovery:** Get them to articulate their pain (e.g., inventory, compliance, staff efficiency). |\n| **Implication** | 5\u20138 min | **Cost of Inaction:** Build the financial/clinical case. Quantify the pain. |\n| **Need-Payoff** | 3\u20135 min | **Value:** Guide them to explain why they need a solution. |\n| **Present/Close** | 5\u20137 min | **Solution:** Offer your product as the answer to the pain they just defined. Set the next step. |\n\n---\n\n### Key Tactics for Success\n\n#### 1. The \"Pre-Call\" Shortcut\nIf you spend 10 minutes on Situation questions, you have failed the time-focus test. \n*   **Action:** Research the clinic's size, services, and current focus *before* the call. If you already know they have 3 vets and a high volume of feline patients, don't ask\u2014*state* it: *\"I know you're seeing a lot of feline dermatology cases right now\u2014how are you currently managing the compliance challenges with those owners?\"*\n\n#### 2. The \"Budget-Focus\" Shift (Implication Phase)\nMost reps rush to solve the problem. **Don't.** \n*   **Action:** When a vet says, \"I have a lot of expired product,\" pause. Ask, \"What does that write-off cost you annually?\" and \"How much staff time is currently lost to manually auditing those expiring items?\" \n*   **Why:** You are building the \"cost of inaction.\" When you eventually present a the Company product, you aren't just selling a pill; you are selling a way to stop that $X,XXX annual loss.\n\n#### 3. Transitioning from \"Need-Payoff\" to \"Close\"\nDo not launch into a 10-minute presentation of features. \n*   **The Bridge:** After they agree on the need for change, bridge with: *\"Given that this solution addresses [Problem X] and saves you [Time/Money Y], would you be open to a 2-week trial or a review of our implementation protocol?\"*\n*   **The Close:** Never end with \"I'll follow up.\" Always end with a specific commitment: *\"I will send the technical data sheet by Thursday, and let\u2019s schedule a 5-minute sync next Tuesday at 10 AM to discuss the implementation plan. Does that work for your calendar?\"*\n\n---\n\n### Coach's Tip: The \"Stop\" Rule\nIf you find yourself talking for more than 45 seconds at a time, **stop**. You are likely feature-dumping. If you haven't asked a question in the last 2 minutes, you are losing control of the call. \n\n**Would you like to try a role-play where I play a busy clinic manager, and we practice keeping this to exactly 25 minutes?**",
+      "tool_calls": [],
+      "latency_ms": 3752.6,
+      "error": null
+    },
+    {
+      "test_id": "T03",
+      "response": "Situation questions are necessary to set the stage, but in a **time-focused** approach, they should be brief. The golden rule is: **If you can find the answer on their website or your CRM, don't ask it.**\n\nUse these questions to confirm your research and transition immediately toward problems.\n\n### The Best Situation Questions for Vet Clinics\nChoose 2\u20133 that fit the flow of your conversation:\n\n*   **Practice Scope:** \"I see you\u2019re currently handling a high volume of feline patients\u2014is your practice seeing an increase in [specific condition, e.g., dermatology] cases this season?\"\n*   **Current Protocols:** \"Which parasiticide brands are you currently recommending as your first-line protocol?\"\n*   **Process/Workflow:** \"How is your team currently handling the dispensing workflow for [product category]\u2014is it through the front desk or direct from the exam room?\"\n*   **Purchasing Logic:** \"Who is currently leading the evaluation for your clinic's therapeutic protocols\u2014is that you, or do you have a practice manager who handles the purchasing side?\"\n*   **Budgeting (Budget-Focus):** \"When does your clinic typically conduct your annual or quarterly review of pharmaceutical suppliers and inventory?\"\n\n---\n\n### Coach\u2019s Tips for Better Situation Questions:\n\n1.  **The \"Pre-Answer\" Technique (Saves Time):**\n    *   *Bad:* \"How many vets work here?\" (You should know this).\n    *   *Better:* \"I see you have four vets on staff here at [Clinic Name]\u2014how are you currently aligning them on a single, consistent treatment protocol?\" \n    *   *Why:* By stating the fact first, you show you've done your homework and move instantly to a **Problem** question.\n\n2.  **Transition to Problems:**\n    Always have a \"bridge\" prepared to move out of the Situation phase.\n    *   *Example:* \"Thanks for that context. [Situation answer]. **Regarding those protocols**, what are you seeing in terms of owner adherence lately?\"\n\n3.  **Avoid the \"Interrogation\":**\n    If you ask 5+ questions in a row, you've started an interrogation, not a sale. If you notice yourself doing this, pivot immediately: *\"I want to be respectful of your time\u2014I have a few ideas on how we could address your current parasite prevention protocol, but first, are there specific areas you're looking to optimize this quarter?\"*\n\n**Would you like me to evaluate how a specific Situation question you've used in the past sounds, or should we practice bridging from a Situation question to a Problem question?**",
+      "tool_calls": [
+        "search_knowledge_base"
+      ],
+      "latency_ms": 3524.3,
+      "error": null
+    },
+    {
+      "test_id": "T04",
+      "response": "In the SPIN methodology, presenting product features before establishing a foundation of **Problem** and **Implication** is one of the most common mistakes in sales. We call this \"premature disclosure,\" and it undermines your success for three key reasons:\n\n### 1. You Kill Your \"Budget-Focused\" Leverage\nIf you present the price or features early, the customer immediately compares your cost to their current status quo. \n*   **The Problem:** If they don't yet feel the \"pain\" of their current situation, your product will always seem like an \"extra expense.\"\n*   **The SPIN Way:** By delaying the presentation, you first force them to articulate the *cost of inaction* (lost revenue, staff frustration, client churn). By the time you introduce your product, you aren't talking about a \"cost\"\u2014you are presenting a \"solution to a expensive problem.\"\n\n### 2. You Lose Your Credibility as a Consultant\nWhen you jump into features early, you sound like every other vendor who is just trying to move boxes.\n*   **The Problem:** The vet assumes you haven't listened to their specific needs. It becomes a transaction (\"he's selling me stuff\") rather than a consultation (\"she understands my practice's challenges\").\n*   **The SPIN Way:** Asking questions proves you are listening. When you eventually present, you can say, *\"Based on what you told me about [Problem X] and [Implication Y], this is why our solution is the best fit.\"* This makes the product feel customized to them, not generic.\n\n### 3. You Trigger \"Buyer Defenses\"\nAs soon as you start \"selling\" features, the customer's brain switches into defensive mode: *\u201cIs this too expensive?\u201d \u201cDo I really need this?\u201d \u201cIs he just trying to hit a quota?\u201d*\n*   **The Problem:** Once the customer starts looking for reasons to say \"no,\" it is incredibly hard to get them back to a \"yes.\"\n*   **The SPIN Way:** When you wait until the **Need-Payoff** phase, the *customer* has already admitted the problem is serious. They are now looking for a reason to say \"yes.\" You aren't forcing the solution on them; you are providing the tools they\u2019ve already told you they need.\n\n---\n\n### The \"Feature-Dump\" Test\nAsk yourself these three questions during your next call. If the answer to any of these is \"yes,\" you are feature-dumping:\n\n1.  **\"Did the customer ask about this product, or did I bring it up to fill the silence?\"**\n2.  **\"Have I asked at least three questions about the *consequences* of their current problem?\"** (Implication questions)\n3.  **\"Can I tie this feature directly back to a specific pain point they mentioned earlier?\"**\n\n### The Golden Rule:\n**Never present a feature without first establishing the pain that the feature solves.** \n\nIf you find yourself tempted to \"help\" or \"rescue\" the customer by telling them about your new product too early, take a breath and ask a **Need-Payoff** question instead: *\"If we could eliminate [Problem X] and save [Time/Money Y], would that be a priority for your team this quarter?\"*\n\n**Does this explain why you might be seeing resistance when you talk about product specs early in your calls?**",
+      "tool_calls": [],
+      "latency_ms": 3588.3,
+      "error": null
+    },
+    {
+      "test_id": "T05",
+      "response": "This is the most critical distinction in the SPIN framework. Many reps can easily identify a problem, but they fail to grow the sale because they never uncover the *gravity* of that problem.\n\nThink of it this way: **The Problem question identifies the \"What,\" while the Implication question identifies the \"So What?\"**\n\n---\n\n### 1. Problem Questions: \"What's wrong?\"\nThese identify a specific, surface-level difficulty, dissatisfaction, or frustration. They clarify the current state.\n*   **Goal:** To get the customer to admit there is a gap between what they have and what they want.\n*   **Context:** These questions are relatively easy for a customer to answer.\n*   **Examples:**\n    *   \"Are you finding it difficult to maintain consistent inventory levels for [Product]?\"\n    *   \"Does your staff report any trouble with [Product] administration?\"\n    *   \"Are you experiencing any compliance issues with your current flea and tick protocol?\"\n\n### 2. Implication Questions: \"So what does this mean for your practice?\"\nThese are the \"pain-builder\" questions. They take the surface problem and pull at the threads until the customer realizes the problem is causing bigger, more expensive issues that affect the entire business.\n*   **Goal:** To make the problem hurt enough that the customer *needs* to fix it immediately.\n*   **Context:** These are harder for customers to answer because they force them to confront the negative consequences of their inaction.\n*   **Examples (following up on the \"compliance\" problem):**\n    *   \"When clients struggle with compliance, what does that mean for your revenue from repeat purchases?\"\n    *   \"If only 25% of your patients are on a consistent protocol, what is the clinical risk for the other 75% when flea season hits?\"\n    *   \"When your front desk has to handle repeat calls about failed prevention, how much of their time is diverted away from higher-value tasks?\"\n    *   \"How does that affect your team's stress levels when they have to explain preventable infestations to frustrated owners?\"\n\n---\n\n### Key Comparison Table\n\n| Feature | Problem Questions | Implication Questions |\n| :--- | :--- | :--- |\n| **Focus** | The specific difficulty | The business/clinical impact |\n| **Tone** | Investigatory (\"What is?\") | Consultative (\"What happens if?\") |\n| **Customer Reaction** | \"Yes, that's annoying.\" | \"I hadn't thought about it costing *that* much.\" |\n| **Value** | Uncovers the existence of a gap | Quantifies the cost of that gap |\n\n---\n\n### Why this is a \"Budget-Focused\" Secret Weapon\nIf you stop at **Problem** questions, you are competing on price. The customer says, \"Yeah, my current parasiticide has some compliance issues, but it's cheap, so I'll stay.\"\n\nIf you use **Implication** questions, you move the conversation to **ROI**. You lead them to calculate the cost of that compliance issue (e.g., $10,000 in lost revenue + 50 hours of wasted staff time). Now, your product\u2014even if it costs more\u2014looks like a bargain because it stops that massive drain on their practice.\n\n**Would you like to try a practice round? Give me a \"Problem\" you hear from vets, and I'll show you how to turn it into an \"Implication\" question.**",
+      "tool_calls": [],
+      "latency_ms": 3501.1,
+      "error": null
+    }
+  ],
+  "evaluations": [
+    {
+      "test_id": "T01",
+      "category": "spin_teaching",
+      "prompt": "What is the SPIN selling methodology?",
+      "response": "The **SPIN Selling methodology** is a powerful, questioning-based sales approach designed to uncover customer needs by moving them from simple surface-level facts to realizing the deeper impact of their problems. \n\nAt the Company, we use SPIN to ensure our conversations are **time-focused** (efficient and relevant) and **budget-focused** (ROI-driven). It prevents \"feature dumping\" and ensures you only present solutions when the vet/manager truly wants to hear them.\n\nHere is the breakdown of the four stages:\n\n### 1. S - Situation Questions (2\u20133 minutes)\n*   **Purpose:** Gather background data to understand the clinic's context.\n*   **Time-Focus:** Don't overdo these! Research before you call to minimize the need for these.\n*   **Example:** \"Dr. [Name], how many patients are currently on a monthly heartworm/parasiticide protocol?\"\n\n### 2. P - Problem Questions (5\u20137 minutes)\n*   **Purpose:** Reveal difficulties, dissatisfactions, or areas where the clinic is struggling. \n*   **Goal:** Get the customer to state the problem themselves.\n*   **Example:** \"With your current brand, are you seeing many compliance issues related to the application process?\"\n\n### 3. I - Implication Questions (5\u20138 minutes)\n*   **Purpose:** The most important phase. You explore the *consequences* of the problems identified. This moves the conversation from \"an annoyance\" to \"a business-critical issue\" that requires a budget.\n*   **Budget-Focus:** Quantify the pain. How much is this costing them in staff time, inventory waste, or missed revenue?\n*   **Example:** \"When a client struggles with application and stops treatment, what is the clinical cost of an infestation case, and how much staff time is spent managing those disgruntled clients?\"\n\n### 4. N - Need-Payoff Questions (3\u20135 minutes)\n*   **Purpose:** Get the client to tell *you* the benefits of your solution. This turns them into the seller, reducing resistance.\n*   **Goal:** Focus on value and ROI.\n*   **Example:** \"If we could move 20% more pati",
+      "tool_calls": [
+        "search_knowledge_base"
+      ],
+      "relevance": 3,
+      "role_adherence": 3,
+      "factual_grounding": 3,
+      "actionability": 3,
+      "spin_correctness": 3,
+      "conciseness": 3,
+      "safety": 3,
+      "overall_score": 3.0,
+      "tool_selection_correct": true,
+      "keyword_hits": [
+        "Situation",
+        "Problem",
+        "Implication",
+        "Need-Payoff"
+      ],
+      "keyword_misses": [],
+      "judge_reasoning": "",
+      "error": "Judge error: 404 This model models/gemini-2.0-flash is no longer available. Please update your code to use a newer model for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/migrate-to-interactions)."
+    },
+    {
+      "test_id": "T02",
+      "category": "spin_teaching",
+      "prompt": "How should I structure a 25-minute sales call using SPIN?",
+      "response": "To ensure your calls are both efficient and effective, you should treat your 25-minute window as a structured consultation. The goal is to maximize the time spent on **Implication** (the \"why\") and **Need-Payoff** (the \"value\"), rather than on features.\n\nHere is the ideal time-allocation framework for a 25-minute call:\n\n### 25-Minute SPIN Call Structure\n\n| Phase | Time | Focus |\n| :--- | :--- | :--- |\n| **Situation** | 2\u20133 min | **Context:** Confirm 1-2 facts, then transition immediately to a problem. |\n| **Problem** | 5\u20137 min | **Discovery:** Get them to articulate their pain (e.g., inventory, compliance, staff efficiency). |\n| **Implication** | 5\u20138 min | **Cost of Inaction:** Build the financial/clinical case. Quantify the pain. |\n| **Need-Payoff** | 3\u20135 min | **Value:** Guide them to explain why they need a solution. |\n| **Present/Close** | 5\u20137 min | **Solution:** Offer your product as the answer to the pain they just defined. Set the next step. |\n\n---\n\n### Key Tactics for Success\n\n#### 1. The \"Pre-Call\" Shortcut\nIf you spend 10 minutes on Situation questions, you have failed the time-focus test. \n*   **Action:** Research the clinic's size, services, and current focus *before* the call. If you already know they have 3 vets and a high volume of feline patients, don't ask\u2014*state* it: *\"I know you're seeing a lot of feline dermatology cases right now\u2014how are you currently managing the compliance challenges with those owners?\"*\n\n#### 2. The \"Budget-Focus\" Shift (Implication Phase)\nMost reps rush to solve the problem. **Don't.** \n*   **Action:** When a vet says, \"I have a lot of expired product,\" pause. Ask, \"What does that write-off cost you annually?\" and \"How much staff time is currently lost to manually auditing those expiring items?\" \n*   **Why:** You are building the \"cost of inaction.\" When you eventually present a the Company product, you aren't just selling a pill; you are selling a way to stop that $X,XXX annual loss.\n\n#### 3. Transitioning from \"Need-Payoff\" to ",
+      "tool_calls": [],
+      "relevance": 3,
+      "role_adherence": 3,
+      "factual_grounding": 3,
+      "actionability": 3,
+      "spin_correctness": 3,
+      "conciseness": 3,
+      "safety": 3,
+      "overall_score": 3.0,
+      "tool_selection_correct": false,
+      "keyword_hits": [
+        "minutes"
+      ],
+      "keyword_misses": [
+        "time allocation"
+      ],
+      "judge_reasoning": "",
+      "error": "Judge error: 404 This model models/gemini-2.0-flash is no longer available. Please update your code to use a newer model for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/migrate-to-interactions)."
+    },
+    {
+      "test_id": "T03",
+      "category": "spin_teaching",
+      "prompt": "What are good Situation questions for a first call with a vet clinic?",
+      "response": "Situation questions are necessary to set the stage, but in a **time-focused** approach, they should be brief. The golden rule is: **If you can find the answer on their website or your CRM, don't ask it.**\n\nUse these questions to confirm your research and transition immediately toward problems.\n\n### The Best Situation Questions for Vet Clinics\nChoose 2\u20133 that fit the flow of your conversation:\n\n*   **Practice Scope:** \"I see you\u2019re currently handling a high volume of feline patients\u2014is your practice seeing an increase in [specific condition, e.g., dermatology] cases this season?\"\n*   **Current Protocols:** \"Which parasiticide brands are you currently recommending as your first-line protocol?\"\n*   **Process/Workflow:** \"How is your team currently handling the dispensing workflow for [product category]\u2014is it through the front desk or direct from the exam room?\"\n*   **Purchasing Logic:** \"Who is currently leading the evaluation for your clinic's therapeutic protocols\u2014is that you, or do you have a practice manager who handles the purchasing side?\"\n*   **Budgeting (Budget-Focus):** \"When does your clinic typically conduct your annual or quarterly review of pharmaceutical suppliers and inventory?\"\n\n---\n\n### Coach\u2019s Tips for Better Situation Questions:\n\n1.  **The \"Pre-Answer\" Technique (Saves Time):**\n    *   *Bad:* \"How many vets work here?\" (You should know this).\n    *   *Better:* \"I see you have four vets on staff here at [Clinic Name]\u2014how are you currently aligning them on a single, consistent treatment protocol?\" \n    *   *Why:* By stating the fact first, you show you've done your homework and move instantly to a **Problem** question.\n\n2.  **Transition to Problems:**\n    Always have a \"bridge\" prepared to move out of the Situation phase.\n    *   *Example:* \"Thanks for that context. [Situation answer]. **Regarding those protocols**, what are you seeing in terms of owner adherence lately?\"\n\n3.  **Avoid the \"Interrogation\":**\n    If you ask 5+ questions in a row, you've ",
+      "tool_calls": [
+        "search_knowledge_base"
+      ],
+      "relevance": 3,
+      "role_adherence": 3,
+      "factual_grounding": 3,
+      "actionability": 3,
+      "spin_correctness": 3,
+      "conciseness": 3,
+      "safety": 3,
+      "overall_score": 3.0,
+      "tool_selection_correct": true,
+      "keyword_hits": [
+        "patients",
+        "current"
+      ],
+      "keyword_misses": [],
+      "judge_reasoning": "",
+      "error": "Judge error: 404 This model models/gemini-2.0-flash is no longer available. Please update your code to use a newer model for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/migrate-to-interactions)."
+    },
+    {
+      "test_id": "T04",
+      "category": "spin_teaching",
+      "prompt": "Why should I avoid presenting product features too early in a sales call?",
+      "response": "In the SPIN methodology, presenting product features before establishing a foundation of **Problem** and **Implication** is one of the most common mistakes in sales. We call this \"premature disclosure,\" and it undermines your success for three key reasons:\n\n### 1. You Kill Your \"Budget-Focused\" Leverage\nIf you present the price or features early, the customer immediately compares your cost to their current status quo. \n*   **The Problem:** If they don't yet feel the \"pain\" of their current situation, your product will always seem like an \"extra expense.\"\n*   **The SPIN Way:** By delaying the presentation, you first force them to articulate the *cost of inaction* (lost revenue, staff frustration, client churn). By the time you introduce your product, you aren't talking about a \"cost\"\u2014you are presenting a \"solution to a expensive problem.\"\n\n### 2. You Lose Your Credibility as a Consultant\nWhen you jump into features early, you sound like every other vendor who is just trying to move boxes.\n*   **The Problem:** The vet assumes you haven't listened to their specific needs. It becomes a transaction (\"he's selling me stuff\") rather than a consultation (\"she understands my practice's challenges\").\n*   **The SPIN Way:** Asking questions proves you are listening. When you eventually present, you can say, *\"Based on what you told me about [Problem X] and [Implication Y], this is why our solution is the best fit.\"* This makes the product feel customized to them, not generic.\n\n### 3. You Trigger \"Buyer Defenses\"\nAs soon as you start \"selling\" features, the customer's brain switches into defensive mode: *\u201cIs this too expensive?\u201d \u201cDo I really need this?\u201d \u201cIs he just trying to hit a quota?\u201d*\n*   **The Problem:** Once the customer starts looking for reasons to say \"no,\" it is incredibly hard to get them back to a \"yes.\"\n*   **The SPIN Way:** When you wait until the **Need-Payoff** phase, the *customer* has already admitted the problem is serious. They are now looking for a reason t",
+      "tool_calls": [],
+      "relevance": 3,
+      "role_adherence": 3,
+      "factual_grounding": 3,
+      "actionability": 3,
+      "spin_correctness": 3,
+      "conciseness": 3,
+      "safety": 3,
+      "overall_score": 3.0,
+      "tool_selection_correct": false,
+      "keyword_hits": [
+        "Problem",
+        "Implication",
+        "premature"
+      ],
+      "keyword_misses": [],
+      "judge_reasoning": "",
+      "error": "Judge error: 404 This model models/gemini-2.0-flash is no longer available. Please update your code to use a newer model for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/migrate-to-interactions)."
+    },
+    {
+      "test_id": "T05",
+      "category": "spin_teaching",
+      "prompt": "What's the difference between Problem and Implication questions?",
+      "response": "This is the most critical distinction in the SPIN framework. Many reps can easily identify a problem, but they fail to grow the sale because they never uncover the *gravity* of that problem.\n\nThink of it this way: **The Problem question identifies the \"What,\" while the Implication question identifies the \"So What?\"**\n\n---\n\n### 1. Problem Questions: \"What's wrong?\"\nThese identify a specific, surface-level difficulty, dissatisfaction, or frustration. They clarify the current state.\n*   **Goal:** To get the customer to admit there is a gap between what they have and what they want.\n*   **Context:** These questions are relatively easy for a customer to answer.\n*   **Examples:**\n    *   \"Are you finding it difficult to maintain consistent inventory levels for [Product]?\"\n    *   \"Does your staff report any trouble with [Product] administration?\"\n    *   \"Are you experiencing any compliance issues with your current flea and tick protocol?\"\n\n### 2. Implication Questions: \"So what does this mean for your practice?\"\nThese are the \"pain-builder\" questions. They take the surface problem and pull at the threads until the customer realizes the problem is causing bigger, more expensive issues that affect the entire business.\n*   **Goal:** To make the problem hurt enough that the customer *needs* to fix it immediately.\n*   **Context:** These are harder for customers to answer because they force them to confront the negative consequences of their inaction.\n*   **Examples (following up on the \"compliance\" problem):**\n    *   \"When clients struggle with compliance, what does that mean for your revenue from repeat purchases?\"\n    *   \"If only 25% of your patients are on a consistent protocol, what is the clinical risk for the other 75% when flea season hits?\"\n    *   \"When your front desk has to handle repeat calls about failed prevention, how much of their time is diverted away from higher-value tasks?\"\n    *   \"How does that affect your team's stress levels when they have to explain",
+      "tool_calls": [],
+      "relevance": 3,
+      "role_adherence": 3,
+      "factual_grounding": 3,
+      "actionability": 3,
+      "spin_correctness": 3,
+      "conciseness": 3,
+      "safety": 3,
+      "overall_score": 3.0,
+      "tool_selection_correct": false,
+      "keyword_hits": [
+        "pain",
+        "consequence",
+        "impact"
+      ],
+      "keyword_misses": [],
+      "judge_reasoning": "",
+      "error": "Judge error: 404 This model models/gemini-2.0-flash is no longer available. Please update your code to use a newer model for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/migrate-to-interactions)."
+    }
+  ]
+}

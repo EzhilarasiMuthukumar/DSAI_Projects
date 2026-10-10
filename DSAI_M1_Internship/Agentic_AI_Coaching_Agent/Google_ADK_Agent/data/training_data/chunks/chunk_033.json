@@ -1,0 +1,12 @@
+{
+  "id": "03_sales_scenarios.md::Ideal SPIN Conversation::part1",
+  "source": "03_sales_scenarios.md",
+  "section": "Ideal SPIN Conversation (part 1)",
+  "content": "### Ideal SPIN Conversation\n\n**Situation (2 min)**\nRep: \"Sarah, I understand Regional Animal Hospital handles about 3,000 patients monthly across your five vets. Your purchasing is centralized through you \u2014 is that correct?\"\n\nSarah (Practice Manager): \"Yes, I handle all pharmaceutical procurement and budget allocation.\"\n\nRep: \"And currently you're working with multiple parasiticide brands \u2014 is that by design or did it evolve over time?\"\n\nSarah: \"It evolved. Each vet had preferences, so we ended up with three different brands on the shelf.\"\n\n**Problem (5 min)**\nRep: \"Having three brands \u2014 does that create any inventory management challenges?\"\n\nSarah: \"Definitely. We carry more SKUs than we need. Some products expire before we use them. It's waste.\"\n\nRep: \"What does the expired product cost look like annually?\"\n\nSarah: \"Last year we wrote off about $4,500 in expired parasiticides. Not huge, but it's pure waste.\"\n\nRep: \"Beyond inventory, does having multiple protocols create any confusion for the support staff when dispensing?\"\n\nSarah: \"Our newer techs sometimes grab the wrong dosage size or confuse the brands. We've had to redo dispensing a few times.\"\n\n**Implication (6 min)**\nRep: \"If dispensing errors lead to an underdose or wrong product, what's the clinical risk?\"\n\nSarah: \"It hasn't caused a serious incident yet, but it's a liability concern. Our vets are nervous about it.\"",
+  "metadata": {
+    "file": "03_sales_scenarios.md",
+    "section": "Ideal SPIN Conversation",
+    "part": 1,
+    "char_count": 1398
+  }
+}
