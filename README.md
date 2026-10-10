@@ -1,6 +1,6 @@
 # DSAI_Projects
 
-Dashboard of all projects, articles and presentations from M1 & M2 — tap a tile to open its notebook or report.
+Dashboard of all projects, articles and presentations from M1 & M2 — tap a title to open its notebook or report.
 
 ## M1 Internship Projects
 
