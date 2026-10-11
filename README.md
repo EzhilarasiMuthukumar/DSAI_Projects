@@ -15,8 +15,9 @@
 <td width="30%" valign="top" align="center">
 
 <img src=".assets/profile.jpg" alt="Ezhilarasi Muthukumar" width="160" /><br/><br/>
-**LinkedIn:** [ezhilarasiatwork](https://www.linkedin.com/in/ezhilarasiatwork/)<br/>
-**E-mail:** ezhilarasiatwork@gmail.com
+**Ezhilarasi Muthukumar**<br/>
+<img src=".assets/linkedin.avif" alt="LinkedIn" width="16" /> [ezhilarasiatwork](https://www.linkedin.com/in/ezhilarasiatwork/)<br/>
+<img src=".assets/gmail.webp" alt="Email" width="16" /> ezhilarasiatwork@gmail.com
 
 </td>
 </tr>
