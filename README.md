@@ -16,8 +16,8 @@
 
 <img src=".assets/profile.jpg" alt="Ezhilarasi Muthukumar" width="160" /><br/><br/>
 **Ezhilarasi Muthukumar**<br/>
-<img src=".assets/linkedin.avif" alt="LinkedIn" width="16" /> [ezhilarasiatwork](https://www.linkedin.com/in/ezhilarasiatwork/)<br/>
-<img src=".assets/gmail.webp" alt="Email" width="16" /> ezhilarasiatwork@gmail.com
+<img src=".assets/linkedin.avif" alt="LinkedIn" width="18" style="vertical-align:middle" /> [ezhilarasiatwork](https://www.linkedin.com/in/ezhilarasiatwork/)<br/>
+<img src=".assets/gmail.webp" alt="Email" width="16" style="vertical-align:middle" /> [ezhilarasiatwork](mailto:ezhilarasiatwork@gmail.com)
 
 </td>
 </tr>
